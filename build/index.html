@@ -15,80 +15,831 @@
       <div class="page-header__wrapper">
         <div class="main-navigation">
           <div class="main-navigation__burger">
-            <button class="main-navigation__burger-button">Открыть меню</button><span>Купить страховку</span>
+            <button class="main-navigation__burger-button">Открыть меню</button><span>Ut sodales vitae</span>
           </div>
-        </div><a class="header__logo" href="index.html"><img src="./img/prosto-logo.png" alt="Prosto Insure" width="199" height="22"></a>
-        <div class="page-header__contacts"><a class="page-header__contacts-tel" href="#">+7 499 322-14-22</a><a class="page-header__contacts-callback" href="#">Перезвоните мне
+        </div><a class="header__logo" href="#">Lorem insure</a>
+        <div class="page-header__contacts"><a class="page-header__contacts-tel" href="#">+7 499 322-14-22</a><a class="page-header__contacts-callback" href="#">Ut sodales 
             <svg xmlns="http://www.w3.org/2000/svg" width="5" height="7" viewBox="0 0 5 7">
               <path class="cls-1" d="M0 4h5l-2.5 3ZM2 0h1v5h-1v-5Z"></path>
             </svg></a></div>
       </div>
     </header>
-    <!-- Main container-->
-    <!-- .container-->
-    <div class="main-content">
-      <div class="main-content__wrapper">
-        <div class="subheader subheader--main">
-          <h1 class="subheader__title"><span>Дешёвые онлайн-страховки для туристов</span></h1>
-          <p class="subheader__description">
-            От 40 рублей в день, 9 компаний на выбор, подходит для визы
-            и спортивных соревнований, оплата картой, полис PDF
-            на email — всего за 2 минуты.
-          </p>
-        </div>
-        <div class="main-selection">
-          <form action="catalog.html" method="get">
-            <div class="main-selection__wrapper">
-              <div class="main-selection__select-block main-selection__select-block--place">
-                <label for="place">Куда вы собираетесь?</label>
-                <select class="main-selection__select" multiple id="place">
-                  <option value="Франция">Франция</option>
-                  <option value="Россия">Россия</option>
-                  <option value="Норвегия">Норвегия</option>
-                  <option value="Италия">Италия</option>
-                  <option value="Испания">Испания</option>
-                  <option value="Весь мир" selected>Весь мир</option>
-                  <option value="Американское Самоа" selected>Американское Самоа</option>
-                </select>
+    <div class="subheader subheader--insure-selection">
+      <div class="subheader__wrapper">
+        <h1 class="subheader__title"><span>Ut sodales vitae lacus nec</span></h1>
+        <p class="subheader__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur, erat at rhoncus tincidunt, tortor ipsum varius est, a pretium risus quam eget odio. </p>
+      </div>
+    </div>
+    <div class="insure-selection">
+      <form action="#" method="get">
+        <div class="insure-selection__wrapper">
+          <div class="insure-selection__select-block insure-selection__select-block--place">
+            <label for="place">Cras venenatis in ante</label>
+            <select class="main-selection__select" multiple id="place">
+              <option value="Франция">Франция</option>
+              <option value="Россия">Россия</option>
+              <option value="Норвегия">Норвегия</option>
+              <option value="Италия">Италия</option>
+              <option value="Испания">Испания</option>
+              <option value="Весь мир" selected>Весь мир</option>
+              <option value="Американское Самоа" selected>Американское Самоа</option>
+            </select>
+          </div>
+          <div class="insure-selection__select-block insure-selection__select-block--calendar">
+            <label for="calendar">Cras venenatis</label>
+            <input class="insure-selection__select-input" type="text" id="calendar" placeholder="Ante pretium dapibus" value="25.06.2017 – 02.07.2017">
+          </div>
+          <div class="insure-selection__select-block insure-selection__select-block--person">
+            <label for="person">Cras venenatis </label>
+            <input class="insure-selection__select-input" type="text" id="person" placeholder="Выберите количество человек" value="3 dapibus">
+            <div class="insure-selection__person"><span class="insure-selection__person-caption">Cras</span>
+              <div class="insure-selection__person-item">
+                <input type="text" id="person1" placeholder="+ dapibus" value="30 лет">
+                <button type="button">Remove</button>
               </div>
-              <div class="main-selection__select-block main-selection__select-block--calendar">
-                <label for="calendar">Дата поездки:</label>
-                <input class="main-selection__select-input" type="text" id="calendar" placeholder="Выберите дату поездки" value="25.06.2017 – 02.07.2017">
+              <div class="insure-selection__person-item">
+                <input type="text" id="person2" placeholder="+ dapibus" value="38 лет">
+                <button type="button">Remove</button>
               </div>
-              <div class="main-selection__select-block main-selection__select-block--person">
-                <label for="person">Количество и возраст:</label>
-                <input class="main-selection__select-input" type="text" id="person" placeholder="Выберите количество человек" value="3 туриста">
-                <div class="main-selection__person"><span class="main-selection__person-caption">Возраст туристов:</span>
-                  <div class="main-selection__person-item">
-                    <input type="text" id="person1" placeholder="+ турист" value="30 лет">
-                    <button>Remove</button>
-                  </div>
-                  <div class="main-selection__person-item">
-                    <input type="text" id="person2" placeholder="+ турист" value="38 лет">
-                    <button>Remove</button>
-                  </div>
-                  <div class="main-selection__person-item main-selection__person-item--default">
-                    <input type="text" id="person3" placeholder="+ турист">
-                  </div>
-                </div>
-              </div>
-              <div class="main-selection__select-block main-selection__select-block--activities">
-                <label for="activities">Тип отдыха:</label>
-                <input class="main-selection__select-input" type="text" id="activities" placeholder="Выберите тип отдыха" value="Тренировки или соревнования">
-              </div>
-              <div class="main-selection__checkbox-block">
-                <input type="checkbox" id="abroad" name="abroad">
-                <label for="abroad" tabindex="0">Я уже за границей</label>
-              </div>
-              <div class="main-selection__checkbox-block">
-                <input type="checkbox" id="pregnancy" name="pregnancy">
-                <label for="pregnancy" tabindex="0">Я беременна</label>
+              <div class="insure-selection__person-item insure-selection__person-item--default">
+                <input type="text" id="person3" placeholder="+ dapibus">
               </div>
             </div>
-            <button class="main-selection__button" type="submit">Узнать стоимость</button>
-          </form>
+          </div>
+          <div class="insure-selection__select-block insure-selection__select-block--activities">
+            <label for="activities">Activities</label>
+            <input class="insure-selection__select-input" type="text" id="activities" placeholder="Выберите тип отдыха" value="Ante pretium dapibus">
+          </div>
+          <div class="insure-selection__select-additional">
+            <div class="insure-selection__select-block insure-selection__select-block--medicine">
+              <label for="medicine">Pec congue elit</label>
+              <input class="insure-selection__select-input" type="text" id="medicine" value="30 000 €">
+            </div>
+            <div class="insure-selection__select-block insure-selection__select-block--luggage">
+              <label for="luggage">Phasellus</label>
+              <input class="insure-selection__select-input" type="text" id="luggage" value="500 €">
+            </div>
+            <div class="insure-selection__select-block insure-selection__select-block--civil">
+              <label for="civil">Phasellus nec</label>
+              <input class="insure-selection__select-input" type="text" id="civil" value="10 000 €">
+            </div>
+            <div class="insure-selection__select-block insure-selection__select-block--accident">
+              <label for="accident">Pasel gue elit</label>
+              <input class="insure-selection__select-input" type="text" id="accident" value="30 000 €">
+            </div>
+            <div class="insure-selection__checkbox-block">
+              <input type="checkbox" id="pregnancy" name="pregnancy">
+              <label for="pregnancy" tabindex="0">Phasellus ne</label>
+            </div>
+          </div>
+          <button class="insure-selection__button" type="submit">Count</button>
+          <button class="insure-selection__button-additional" type="button">Additional</button>
         </div>
-        <div class="company-list"><a href="#"><img src="./img/1.png" alt="Страховые компании"><span>Альфа-страхование</span></a><a href="#"><img src="./img/2.png" alt="Страховые компании"><span>Альфа-страхование</span></a><a href="#"><img src="./img/3.png" alt="Страховые компании"><span>Альфа-страхование</span></a><a href="#"><img src="./img/4.png" alt="Страховые компании"><span>Альфа-страхование</span></a><a href="#"><img src="./img/5.png" alt="Страховые компании"><span>Альфа-страхование</span></a><a href="#"><img src="./img/6.png" alt="Страховые компании"><span>Альфа-страхование</span></a><a href="#"><img src="./img/7.png" alt="Страховые компании"><span>Альфа-страхование</span></a><a href="#"><img src="./img/2.png" alt="Страховые компании"><span>Альфа-страхование</span></a><a href="#"><img src="./img/3.png" alt="Страховые компании"><span>Альфа-страхование</span></a></div>
+      </form>
+    </div>
+    <div class="insure-content">
+      <div class="insure-content__wrapper">
+        <section class="insure-catalog">
+          <div class="insure-catalog__filter">
+            <div class="insure-catalog__filter-name-wrapper">
+              <button class="insure-catalog__filter-selection" type="button">Mauris sed eros ut</button><a class="insure-catalog__filter-name insure-catalog__filter-name--active" href="#">ut commodo
+                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="7" viewBox="0 0 5 7">
+                  <path class="cls-1" d="M0 4h5l-2.5 3ZM2 0h1v5h-1v-5Z"></path>
+                </svg></a><a class="insure-catalog__filter-name" href="#">ut commodo
+                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="7" viewBox="0 0 5 7">
+                  <path class="cls-1" d="M0 4h5l-2.5 3ZM2 0h1v5h-1v-5Z"></path>
+                </svg></a><a class="insure-catalog__filter-name" href="#">ut commodo
+                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="7" viewBox="0 0 5 7">
+                  <path class="cls-1" d="M0 4h5l-2.5 3ZM2 0h1v5h-1v-5Z"></path>
+                </svg></a>
+            </div>
+            <div class="insure-catalog__filter-view-wrapper">
+              <button class="insure-catalog__filter-view insure-catalog__filter-view--block" type="button">Вид блоками
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                  <path class="cls-1" data-name="01 cards" d="M0 0h4v4h-4v-4Zm7 0h4v4h-4v-4Zm7 0h4v4h-4v-4Zm-14 7h4v4h-4v-4Zm7 0h4v4h-4v-4Zm7 0h4v4h-4v-4Zm-14 7h4v4h-4v-4Zm7 0h4v4h-4v-4Zm7 0h4v4h-4v-4Z"></path>
+                </svg>
+              </button>
+              <button class="insure-catalog__filter-view insure-catalog__filter-view--list insure-catalog__filter-view--active" type="button">Вид списком
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                  <path class="cls-1" data-name="02 list" d="M0 0h4v4h-4v-4Zm7 1h11v2H7v-2Zm-7 6h4v4h-4v-4Zm7 1h11v2H7v-2Zm-7 6h4v4h-4v-4Zm7 1h11v2H7v-2Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="insure-catalog__list">
+            <article class="insure-catalog__item">
+              <div class="insure-catalog__block-shown">
+                <div class="insure-catalog__company"><img src="./img/alfa.png" alt="" width="40" height="40">
+                  <h2 class="insure-catalog__title"><span>Pellentesque</span></h2>
+                  <ul class="insure-catalog__main-info">
+                    <li>Vivamus eu tellus commodo</li>
+                    <li>Fusce gravida vehicula fringilla.</li>
+                    <li>Curabitur non molestie turpis.</li>
+                    <li>Fusce gravida vehicula fringilla.</li>
+                  </ul>
+                </div>
+                <div class="insure-catalog__risk">10 рисков</div>
+                <div class="insure-catalog__badges">
+                  <div class="insure-catalog__badges-info">
+                    <div class="insure-catalog__badges-hint">Pellentesque molestie </div><img src="./img/discount.png" alt="" width="24" height="24">
+                  </div>
+                </div>
+                <div class="insure-catalog__rating">4,5</div>
+                <ul class="insure-catalog__services-list insure-catalog__services-list--small">
+                  <li>Vivamus eu tellus commodo</li>
+                  <li>Fusce gravida vehicula fringilla.</li>
+                  <li>Curabitur non molestie turpis.</li>
+                  <li>Fusce gravida vehicula fringilla.</li>
+                  <li>Curabitur non molestie turpis.</li>
+                </ul><a class="insure-catalog__risk-link" href="#">+15 turpis</a><a class="insure-catalog__price insure-catalog__price--base" href="#">PONSEQUAT</a>
+                <button class="insure-catalog__button-additional" type="button">Pellentesque</button>
+              </div>
+              <div class="insure-catalog__block-hidden">
+                <div class="insure-catalog__assistance-links">
+                  <div class="insure-catalog__assistance"><span class="insure-catalog__assistance-type">Assistance</span><span class="insure-catalog__assistance-name">Class Assistance</span>
+                    <div class="insure-catalog__assistance-hint-block"><span class="insure-catalog__assistance-hint-button">?</span>
+                      <div class="insure-catalog__assistance-hint">Nullam at nisi in est lacinia volutpat ut ut lacus. Pellentesque molestie consequat felis vel.</div>
+                    </div>
+                  </div>
+                  <div class="insure-catalog__links"><a href="#">Molestie consequat </a><a href="#">Molestie consequat </a></div>
+                </div>
+                <div class="insure-catalog__services">
+                  <div class="insure-catalog__services-title">Phasellus nec congue elit</div>
+                  <ul class="insure-catalog__services-list insure-catalog__services-list--full">
+                    <li><span>Fusce gravida </span><span>10&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>3&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>50&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>5&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>25&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>500&nbsp;€</span></li>
+                    <li><span>Fusce gravida </span><span>1&nbsp;500</span></li>
+                    <li><span>Fusce gravida </span><span>50&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>10&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>30&nbsp;000</span></li>
+                  </ul>
+                </div>
+                <div class="insure-catalog__form">
+                  <div class="insure-catalog__form-title">Pellentesque:</div>
+                  <form action="#" method="get">
+                    <div class="insure-catalog__form-wrapper">
+                      <fieldset class="insure-catalog__fieldset-luggage">
+                        <div class="insure-catalog__legend">Molestie consequat </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage1" name="luggage">
+                          <label for="luggage1" tabindex="0">None</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage2" name="luggage">
+                          <label for="luggage2" tabindex="0">500 за 191 &#8381;</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage3" name="luggage">
+                          <label for="luggage3" tabindex="0">1&nbsp;000 за 383 &#8381;</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage4" name="luggage">
+                          <label for="luggage4" tabindex="0">1 500 за 574 &#8381;</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage5" name="luggage">
+                          <label for="luggage5" tabindex="0">2&nbsp;000 за 765 &#8381;</label>
+                        </div>
+                      </fieldset>
+                      <div class="insure-catalog__fieldset-wrapper">
+                        <fieldset class="insure-catalog__fieldset-accident">
+                          <div class="insure-catalog__legend">Molestie consequat:</div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="accident1" name="accident">
+                            <label for="accident1" tabindex="0">None</label>
+                          </div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="accident2" name="accident">
+                            <label for="accident2" tabindex="0">500 за 191 &#8381;</label>
+                          </div>
+                        </fieldset>
+                        <fieldset class="insure-catalog__fieldset-responsibility">
+                          <div class="insure-catalog__legend">Nullam at nisi in est:</div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="responsibility1" name="responsibility">
+                            <label for="responsibility1" tabindex="0">None</label>
+                          </div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="responsibility2" name="responsibility">
+                            <label for="responsibility2" tabindex="0">500 за 191 &#8381;</label>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="insure-catalog__value">
+                        <div class="insure-catalog__legend">Ksanbmi</div><strong class="insure-catalog__price insure-catalog__price--total">1 684 &#8381;</strong>
+                        <button class="insure-catalog__button-buy" type="submit">Nullam </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </article>
+            <article class="insure-catalog__item">
+              <div class="insure-catalog__block-shown">
+                <div class="insure-catalog__company"><img src="./img/alfa.png" alt="" width="40" height="40">
+                  <h2 class="insure-catalog__title"><span>Phasellus</span></h2>
+                  <ul class="insure-catalog__main-info">
+                    <li>Vivamus eu tellus commodo</li>
+                    <li>Fusce gravida vehicula fringilla.</li>
+                    <li>Curabitur non molestie turpis.</li>
+                    <li>Fusce gravida vehicula fringilla.</li>
+                  </ul>
+                </div>
+                <div class="insure-catalog__risk">10 рисков</div>
+                <div class="insure-catalog__badges">
+                  <div class="insure-catalog__badges-info">
+                    <div class="insure-catalog__badges-hint">Pellentesque molestie </div><img src="./img/discount.png" alt="" width="24" height="24">
+                  </div>
+                </div>
+                <div class="insure-catalog__rating">4,5</div>
+                <ul class="insure-catalog__services-list insure-catalog__services-list--small">
+                  <li>Vivamus eu tellus commodo</li>
+                  <li>Fusce gravida vehicula fringilla.</li>
+                  <li>Curabitur non molestie turpis.</li>
+                  <li>Fusce gravida vehicula fringilla.</li>
+                  <li>Curabitur non molestie turpis.</li>
+                </ul><a class="insure-catalog__risk-link" href="#">+15 turpis</a><a class="insure-catalog__price insure-catalog__price--base" href="#">PONSEQUAT</a>
+                <button class="insure-catalog__button-additional" type="button">Pellentesque</button>
+              </div>
+              <div class="insure-catalog__block-hidden">
+                <div class="insure-catalog__assistance-links">
+                  <div class="insure-catalog__assistance"><span class="insure-catalog__assistance-type">Assistance</span><span class="insure-catalog__assistance-name">Class Assistance</span>
+                    <div class="insure-catalog__assistance-hint-block"><span class="insure-catalog__assistance-hint-button">?</span>
+                      <div class="insure-catalog__assistance-hint">Nullam at nisi in est lacinia volutpat ut ut lacus. Pellentesque molestie consequat felis vel.</div>
+                    </div>
+                  </div>
+                  <div class="insure-catalog__links"><a href="#">Molestie consequat </a><a href="#">Molestie consequat </a></div>
+                </div>
+                <div class="insure-catalog__services">
+                  <div class="insure-catalog__services-title">Phasellus nec congue elit</div>
+                  <ul class="insure-catalog__services-list insure-catalog__services-list--full">
+                    <li><span>Fusce gravida </span><span>10&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>3&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>50&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>5&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>25&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>500&nbsp;€</span></li>
+                    <li><span>Fusce gravida </span><span>1&nbsp;500</span></li>
+                    <li><span>Fusce gravida </span><span>50&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>10&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>30&nbsp;000</span></li>
+                  </ul>
+                </div>
+                <div class="insure-catalog__form">
+                  <div class="insure-catalog__form-title">Pellentesque:</div>
+                  <form action="#" method="get">
+                    <div class="insure-catalog__form-wrapper">
+                      <fieldset class="insure-catalog__fieldset-luggage">
+                        <div class="insure-catalog__legend">Molestie consequat </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage1" name="luggage">
+                          <label for="luggage1" tabindex="0">None</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage2" name="luggage">
+                          <label for="luggage2" tabindex="0">500 за 191 &#8381;</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage3" name="luggage">
+                          <label for="luggage3" tabindex="0">1&nbsp;000 за 383 &#8381;</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage4" name="luggage">
+                          <label for="luggage4" tabindex="0">1 500 за 574 &#8381;</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage5" name="luggage">
+                          <label for="luggage5" tabindex="0">2&nbsp;000 за 765 &#8381;</label>
+                        </div>
+                      </fieldset>
+                      <div class="insure-catalog__fieldset-wrapper">
+                        <fieldset class="insure-catalog__fieldset-accident">
+                          <div class="insure-catalog__legend">Molestie consequat:</div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="accident1" name="accident">
+                            <label for="accident1" tabindex="0">None</label>
+                          </div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="accident2" name="accident">
+                            <label for="accident2" tabindex="0">500 за 191 &#8381;</label>
+                          </div>
+                        </fieldset>
+                        <fieldset class="insure-catalog__fieldset-responsibility">
+                          <div class="insure-catalog__legend">Nullam at nisi in est:</div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="responsibility1" name="responsibility">
+                            <label for="responsibility1" tabindex="0">None</label>
+                          </div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="responsibility2" name="responsibility">
+                            <label for="responsibility2" tabindex="0">500 за 191 &#8381;</label>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="insure-catalog__value">
+                        <div class="insure-catalog__legend">Ksanbmi</div><strong class="insure-catalog__price insure-catalog__price--total">1 684 &#8381;</strong>
+                        <button class="insure-catalog__button-buy" type="submit">Nullam </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </article>
+            <article class="insure-catalog__item">
+              <div class="insure-catalog__block-shown">
+                <div class="insure-catalog__company"><img src="./img/alfa.png" alt="" width="40" height="40">
+                  <h2 class="insure-catalog__title"><span>Phasellus</span></h2>
+                  <ul class="insure-catalog__main-info">
+                    <li>Vivamus eu tellus commodo</li>
+                    <li>Fusce gravida vehicula fringilla.</li>
+                    <li>Curabitur non molestie turpis.</li>
+                    <li>Fusce gravida vehicula fringilla.</li>
+                  </ul>
+                </div>
+                <div class="insure-catalog__risk">10 рисков</div>
+                <div class="insure-catalog__badges">
+                  <div class="insure-catalog__badges-info">
+                    <div class="insure-catalog__badges-hint">Pellentesque molestie </div><img src="./img/discount.png" alt="" width="24" height="24">
+                  </div>
+                </div>
+                <div class="insure-catalog__rating">4,5</div>
+                <ul class="insure-catalog__services-list insure-catalog__services-list--small">
+                  <li>Vivamus eu tellus commodo</li>
+                  <li>Fusce gravida vehicula fringilla.</li>
+                  <li>Curabitur non molestie turpis.</li>
+                  <li>Fusce gravida vehicula fringilla.</li>
+                  <li>Curabitur non molestie turpis.</li>
+                </ul><a class="insure-catalog__risk-link" href="#">+15 turpis</a><a class="insure-catalog__price insure-catalog__price--base" href="#">PONSEQUAT</a>
+                <button class="insure-catalog__button-additional" type="button">Pellentesque</button>
+              </div>
+              <div class="insure-catalog__block-hidden">
+                <div class="insure-catalog__assistance-links">
+                  <div class="insure-catalog__assistance"><span class="insure-catalog__assistance-type">Assistance</span><span class="insure-catalog__assistance-name">Class Assistance</span>
+                    <div class="insure-catalog__assistance-hint-block"><span class="insure-catalog__assistance-hint-button">?</span>
+                      <div class="insure-catalog__assistance-hint">Nullam at nisi in est lacinia volutpat ut ut lacus. Pellentesque molestie consequat felis vel.</div>
+                    </div>
+                  </div>
+                  <div class="insure-catalog__links"><a href="#">Molestie consequat </a><a href="#">Molestie consequat </a></div>
+                </div>
+                <div class="insure-catalog__services">
+                  <div class="insure-catalog__services-title">Phasellus nec congue elit</div>
+                  <ul class="insure-catalog__services-list insure-catalog__services-list--full">
+                    <li><span>Fusce gravida </span><span>10&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>3&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>50&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>5&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>25&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>500&nbsp;€</span></li>
+                    <li><span>Fusce gravida </span><span>1&nbsp;500</span></li>
+                    <li><span>Fusce gravida </span><span>50&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>10&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>30&nbsp;000</span></li>
+                  </ul>
+                </div>
+                <div class="insure-catalog__form">
+                  <div class="insure-catalog__form-title">Pellentesque:</div>
+                  <form action="#" method="get">
+                    <div class="insure-catalog__form-wrapper">
+                      <fieldset class="insure-catalog__fieldset-luggage">
+                        <div class="insure-catalog__legend">Molestie consequat </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage1" name="luggage">
+                          <label for="luggage1" tabindex="0">None</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage2" name="luggage">
+                          <label for="luggage2" tabindex="0">500 за 191 &#8381;</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage3" name="luggage">
+                          <label for="luggage3" tabindex="0">1&nbsp;000 за 383 &#8381;</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage4" name="luggage">
+                          <label for="luggage4" tabindex="0">1 500 за 574 &#8381;</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage5" name="luggage">
+                          <label for="luggage5" tabindex="0">2&nbsp;000 за 765 &#8381;</label>
+                        </div>
+                      </fieldset>
+                      <div class="insure-catalog__fieldset-wrapper">
+                        <fieldset class="insure-catalog__fieldset-accident">
+                          <div class="insure-catalog__legend">Molestie consequat:</div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="accident1" name="accident">
+                            <label for="accident1" tabindex="0">None</label>
+                          </div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="accident2" name="accident">
+                            <label for="accident2" tabindex="0">500 за 191 &#8381;</label>
+                          </div>
+                        </fieldset>
+                        <fieldset class="insure-catalog__fieldset-responsibility">
+                          <div class="insure-catalog__legend">Nullam at nisi in est:</div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="responsibility1" name="responsibility">
+                            <label for="responsibility1" tabindex="0">None</label>
+                          </div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="responsibility2" name="responsibility">
+                            <label for="responsibility2" tabindex="0">500 за 191 &#8381;</label>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="insure-catalog__value">
+                        <div class="insure-catalog__legend">Ksanbmi</div><strong class="insure-catalog__price insure-catalog__price--total">1 684 &#8381;</strong>
+                        <button class="insure-catalog__button-buy" type="submit">Nullam </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </article>
+            <div class="insure-catalog__banner"><img src="./img/best-price.png" alt="">
+              <div class="insure-catalog__banner-title">Praesent convallis eu </div>
+              <p>Tium diam semper vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam efficitur, erat at rhoncus tincidunt, tortor ipsum varius est, a pretium risus quam eget odio. </p>
+            </div>
+            <article class="insure-catalog__item">
+              <div class="insure-catalog__block-shown">
+                <div class="insure-catalog__company"><img src="./img/alfa.png" alt="" width="40" height="40">
+                  <h2 class="insure-catalog__title"><span>Phasellus</span></h2>
+                  <ul class="insure-catalog__main-info">
+                    <li>Vivamus eu tellus commodo</li>
+                    <li>Fusce gravida vehicula fringilla.</li>
+                    <li>Curabitur non molestie turpis.</li>
+                    <li>Fusce gravida vehicula fringilla.</li>
+                  </ul>
+                </div>
+                <div class="insure-catalog__risk">10 рисков</div>
+                <div class="insure-catalog__badges">
+                  <div class="insure-catalog__badges-info">
+                    <div class="insure-catalog__badges-hint">Pellentesque molestie </div><img src="./img/discount.png" alt="" width="24" height="24">
+                  </div>
+                </div>
+                <div class="insure-catalog__rating">4,5</div>
+                <ul class="insure-catalog__services-list insure-catalog__services-list--small">
+                  <li>Vivamus eu tellus commodo</li>
+                  <li>Fusce gravida vehicula fringilla.</li>
+                  <li>Curabitur non molestie turpis.</li>
+                  <li>Fusce gravida vehicula fringilla.</li>
+                  <li>Curabitur non molestie turpis.</li>
+                </ul><a class="insure-catalog__risk-link" href="#">+15 turpis</a><a class="insure-catalog__price insure-catalog__price--base" href="#">PONSEQUAT</a>
+                <button class="insure-catalog__button-additional" type="button">Pellentesque</button>
+              </div>
+              <div class="insure-catalog__block-hidden">
+                <div class="insure-catalog__assistance-links">
+                  <div class="insure-catalog__assistance"><span class="insure-catalog__assistance-type">Assistance</span><span class="insure-catalog__assistance-name">Class Assistance</span>
+                    <div class="insure-catalog__assistance-hint-block"><span class="insure-catalog__assistance-hint-button">?</span>
+                      <div class="insure-catalog__assistance-hint">Nullam at nisi in est lacinia volutpat ut ut lacus. Pellentesque molestie consequat felis vel.</div>
+                    </div>
+                  </div>
+                  <div class="insure-catalog__links"><a href="#">Molestie consequat </a><a href="#">Molestie consequat </a></div>
+                </div>
+                <div class="insure-catalog__services">
+                  <div class="insure-catalog__services-title">Phasellus nec congue elit</div>
+                  <ul class="insure-catalog__services-list insure-catalog__services-list--full">
+                    <li><span>Fusce gravida </span><span>10&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>3&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>50&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>5&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>25&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>500&nbsp;€</span></li>
+                    <li><span>Fusce gravida </span><span>1&nbsp;500</span></li>
+                    <li><span>Fusce gravida </span><span>50&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>10&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>30&nbsp;000</span></li>
+                  </ul>
+                </div>
+                <div class="insure-catalog__form">
+                  <div class="insure-catalog__form-title">Pellentesque:</div>
+                  <form action="#" method="get">
+                    <div class="insure-catalog__form-wrapper">
+                      <fieldset class="insure-catalog__fieldset-luggage">
+                        <div class="insure-catalog__legend">Molestie consequat </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage1" name="luggage">
+                          <label for="luggage1" tabindex="0">None</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage2" name="luggage">
+                          <label for="luggage2" tabindex="0">500 за 191 &#8381;</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage3" name="luggage">
+                          <label for="luggage3" tabindex="0">1&nbsp;000 за 383 &#8381;</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage4" name="luggage">
+                          <label for="luggage4" tabindex="0">1 500 за 574 &#8381;</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage5" name="luggage">
+                          <label for="luggage5" tabindex="0">2&nbsp;000 за 765 &#8381;</label>
+                        </div>
+                      </fieldset>
+                      <div class="insure-catalog__fieldset-wrapper">
+                        <fieldset class="insure-catalog__fieldset-accident">
+                          <div class="insure-catalog__legend">Molestie consequat:</div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="accident1" name="accident">
+                            <label for="accident1" tabindex="0">None</label>
+                          </div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="accident2" name="accident">
+                            <label for="accident2" tabindex="0">500 за 191 &#8381;</label>
+                          </div>
+                        </fieldset>
+                        <fieldset class="insure-catalog__fieldset-responsibility">
+                          <div class="insure-catalog__legend">Nullam at nisi in est:</div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="responsibility1" name="responsibility">
+                            <label for="responsibility1" tabindex="0">None</label>
+                          </div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="responsibility2" name="responsibility">
+                            <label for="responsibility2" tabindex="0">500 за 191 &#8381;</label>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="insure-catalog__value">
+                        <div class="insure-catalog__legend">Ksanbmi</div><strong class="insure-catalog__price insure-catalog__price--total">1 684 &#8381;</strong>
+                        <button class="insure-catalog__button-buy" type="submit">Nullam </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </article>
+            <article class="insure-catalog__item">
+              <div class="insure-catalog__block-shown">
+                <div class="insure-catalog__company"><img src="./img/alfa.png" alt="" width="40" height="40">
+                  <h2 class="insure-catalog__title"><span>Phasellus</span></h2>
+                  <ul class="insure-catalog__main-info">
+                    <li>Vivamus eu tellus commodo</li>
+                    <li>Fusce gravida vehicula fringilla.</li>
+                    <li>Curabitur non molestie turpis.</li>
+                    <li>Fusce gravida vehicula fringilla.</li>
+                  </ul>
+                </div>
+                <div class="insure-catalog__risk">10 рисков</div>
+                <div class="insure-catalog__badges">
+                  <div class="insure-catalog__badges-info">
+                    <div class="insure-catalog__badges-hint">Pellentesque molestie </div><img src="./img/discount.png" alt="" width="24" height="24">
+                  </div>
+                </div>
+                <div class="insure-catalog__rating">4,5</div>
+                <ul class="insure-catalog__services-list insure-catalog__services-list--small">
+                  <li>Vivamus eu tellus commodo</li>
+                  <li>Fusce gravida vehicula fringilla.</li>
+                  <li>Curabitur non molestie turpis.</li>
+                  <li>Fusce gravida vehicula fringilla.</li>
+                  <li>Curabitur non molestie turpis.</li>
+                </ul><a class="insure-catalog__risk-link" href="#">+15 turpis</a><a class="insure-catalog__price insure-catalog__price--base" href="#">PONSEQUAT</a>
+                <button class="insure-catalog__button-additional" type="button">Pellentesque</button>
+              </div>
+              <div class="insure-catalog__block-hidden">
+                <div class="insure-catalog__assistance-links">
+                  <div class="insure-catalog__assistance"><span class="insure-catalog__assistance-type">Assistance</span><span class="insure-catalog__assistance-name">Class Assistance</span>
+                    <div class="insure-catalog__assistance-hint-block"><span class="insure-catalog__assistance-hint-button">?</span>
+                      <div class="insure-catalog__assistance-hint">Nullam at nisi in est lacinia volutpat ut ut lacus. Pellentesque molestie consequat felis vel.</div>
+                    </div>
+                  </div>
+                  <div class="insure-catalog__links"><a href="#">Molestie consequat </a><a href="#">Molestie consequat </a></div>
+                </div>
+                <div class="insure-catalog__services">
+                  <div class="insure-catalog__services-title">Phasellus nec congue elit</div>
+                  <ul class="insure-catalog__services-list insure-catalog__services-list--full">
+                    <li><span>Fusce gravida </span><span>10&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>3&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>50&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>5&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>25&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>500&nbsp;€</span></li>
+                    <li><span>Fusce gravida </span><span>1&nbsp;500</span></li>
+                    <li><span>Fusce gravida </span><span>50&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>10&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>30&nbsp;000</span></li>
+                  </ul>
+                </div>
+                <div class="insure-catalog__form">
+                  <div class="insure-catalog__form-title">Pellentesque:</div>
+                  <form action="#" method="get">
+                    <div class="insure-catalog__form-wrapper">
+                      <fieldset class="insure-catalog__fieldset-luggage">
+                        <div class="insure-catalog__legend">Molestie consequat </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage1" name="luggage">
+                          <label for="luggage1" tabindex="0">None</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage2" name="luggage">
+                          <label for="luggage2" tabindex="0">500 за 191 &#8381;</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage3" name="luggage">
+                          <label for="luggage3" tabindex="0">1&nbsp;000 за 383 &#8381;</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage4" name="luggage">
+                          <label for="luggage4" tabindex="0">1 500 за 574 &#8381;</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage5" name="luggage">
+                          <label for="luggage5" tabindex="0">2&nbsp;000 за 765 &#8381;</label>
+                        </div>
+                      </fieldset>
+                      <div class="insure-catalog__fieldset-wrapper">
+                        <fieldset class="insure-catalog__fieldset-accident">
+                          <div class="insure-catalog__legend">Molestie consequat:</div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="accident1" name="accident">
+                            <label for="accident1" tabindex="0">None</label>
+                          </div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="accident2" name="accident">
+                            <label for="accident2" tabindex="0">500 за 191 &#8381;</label>
+                          </div>
+                        </fieldset>
+                        <fieldset class="insure-catalog__fieldset-responsibility">
+                          <div class="insure-catalog__legend">Nullam at nisi in est:</div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="responsibility1" name="responsibility">
+                            <label for="responsibility1" tabindex="0">None</label>
+                          </div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="responsibility2" name="responsibility">
+                            <label for="responsibility2" tabindex="0">500 за 191 &#8381;</label>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="insure-catalog__value">
+                        <div class="insure-catalog__legend">Ksanbmi</div><strong class="insure-catalog__price insure-catalog__price--total">1 684 &#8381;</strong>
+                        <button class="insure-catalog__button-buy" type="submit">Nullam </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </article>
+            <article class="insure-catalog__item">
+              <div class="insure-catalog__block-shown">
+                <div class="insure-catalog__company"><img src="./img/alfa.png" alt="" width="40" height="40">
+                  <h2 class="insure-catalog__title"><span>Phasellus</span></h2>
+                  <ul class="insure-catalog__main-info">
+                    <li>Vivamus eu tellus commodo</li>
+                    <li>Fusce gravida vehicula fringilla.</li>
+                    <li>Curabitur non molestie turpis.</li>
+                    <li>Fusce gravida vehicula fringilla.</li>
+                  </ul>
+                </div>
+                <div class="insure-catalog__risk">10 рисков</div>
+                <div class="insure-catalog__badges">
+                  <div class="insure-catalog__badges-info">
+                    <div class="insure-catalog__badges-hint">Pellentesque molestie </div><img src="./img/discount.png" alt="" width="24" height="24">
+                  </div>
+                </div>
+                <div class="insure-catalog__rating">4,5</div>
+                <ul class="insure-catalog__services-list insure-catalog__services-list--small">
+                  <li>Vivamus eu tellus commodo</li>
+                  <li>Fusce gravida vehicula fringilla.</li>
+                  <li>Curabitur non molestie turpis.</li>
+                  <li>Fusce gravida vehicula fringilla.</li>
+                  <li>Curabitur non molestie turpis.</li>
+                </ul><a class="insure-catalog__risk-link" href="#">+15 turpis</a><a class="insure-catalog__price insure-catalog__price--base" href="#">PONSEQUAT</a>
+                <button class="insure-catalog__button-additional" type="button">Pellentesque</button>
+              </div>
+              <div class="insure-catalog__block-hidden">
+                <div class="insure-catalog__assistance-links">
+                  <div class="insure-catalog__assistance"><span class="insure-catalog__assistance-type">Assistance</span><span class="insure-catalog__assistance-name">Class Assistance</span>
+                    <div class="insure-catalog__assistance-hint-block"><span class="insure-catalog__assistance-hint-button">?</span>
+                      <div class="insure-catalog__assistance-hint">Nullam at nisi in est lacinia volutpat ut ut lacus. Pellentesque molestie consequat felis vel.</div>
+                    </div>
+                  </div>
+                  <div class="insure-catalog__links"><a href="#">Molestie consequat </a><a href="#">Molestie consequat </a></div>
+                </div>
+                <div class="insure-catalog__services">
+                  <div class="insure-catalog__services-title">Phasellus nec congue elit</div>
+                  <ul class="insure-catalog__services-list insure-catalog__services-list--full">
+                    <li><span>Fusce gravida </span><span>10&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>3&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>50&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>5&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>25&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>500&nbsp;€</span></li>
+                    <li><span>Fusce gravida </span><span>1&nbsp;500</span></li>
+                    <li><span>Fusce gravida </span><span>50&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>10&nbsp;000</span></li>
+                    <li><span>Fusce gravida </span><span>30&nbsp;000</span></li>
+                  </ul>
+                </div>
+                <div class="insure-catalog__form">
+                  <div class="insure-catalog__form-title">Pellentesque:</div>
+                  <form action="#" method="get">
+                    <div class="insure-catalog__form-wrapper">
+                      <fieldset class="insure-catalog__fieldset-luggage">
+                        <div class="insure-catalog__legend">Molestie consequat </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage1" name="luggage">
+                          <label for="luggage1" tabindex="0">None</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage2" name="luggage">
+                          <label for="luggage2" tabindex="0">500 за 191 &#8381;</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage3" name="luggage">
+                          <label for="luggage3" tabindex="0">1&nbsp;000 за 383 &#8381;</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage4" name="luggage">
+                          <label for="luggage4" tabindex="0">1 500 за 574 &#8381;</label>
+                        </div>
+                        <div class="insure-catalog__radio-block">
+                          <input type="radio" id="luggage5" name="luggage">
+                          <label for="luggage5" tabindex="0">2&nbsp;000 за 765 &#8381;</label>
+                        </div>
+                      </fieldset>
+                      <div class="insure-catalog__fieldset-wrapper">
+                        <fieldset class="insure-catalog__fieldset-accident">
+                          <div class="insure-catalog__legend">Molestie consequat:</div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="accident1" name="accident">
+                            <label for="accident1" tabindex="0">None</label>
+                          </div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="accident2" name="accident">
+                            <label for="accident2" tabindex="0">500 за 191 &#8381;</label>
+                          </div>
+                        </fieldset>
+                        <fieldset class="insure-catalog__fieldset-responsibility">
+                          <div class="insure-catalog__legend">Nullam at nisi in est:</div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="responsibility1" name="responsibility">
+                            <label for="responsibility1" tabindex="0">None</label>
+                          </div>
+                          <div class="insure-catalog__radio-block">
+                            <input type="radio" id="responsibility2" name="responsibility">
+                            <label for="responsibility2" tabindex="0">500 за 191 &#8381;</label>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="insure-catalog__value">
+                        <div class="insure-catalog__legend">Ksanbmi</div><strong class="insure-catalog__price insure-catalog__price--total">1 684 &#8381;</strong>
+                        <button class="insure-catalog__button-buy" type="submit">Nullam </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </article>
+          </div><a class="insure-catalog__button-more" href="#">Sodales vitae</a>
+        </section>
+        <div class="benefits-statistics">
+          <div class="benefits-statistics__benefits">
+            <h3 class="benefits-statistics__title"><span>Donec consectetur</span></h3>
+            <ul class="benefits-statistics__list">
+              <li>
+                <div class="benefits-statistics__image"><img src="./img/advantage-speed.png" alt="" width="37" height="24"></div>
+                <p>Lorem ipsum dolor sit amet</p>
+              </li>
+              <li>
+                <div class="benefits-statistics__image"><img src="./img/advantage-price.png" alt="" width="26" height="26"></div>
+                <p>Lorem ipsum dolor </p>
+              </li>
+              <li>
+                <div class="benefits-statistics__image"><img src="./img/advantage-visa.png" alt="" width="21" height="27"></div>
+                <p>Lorem ipsum dolor sit amet</p>
+              </li>
+              <li>
+                <div class="benefits-statistics__image"><img src="./img/advantage-blockchain.png" alt="" width="27" height="24"></div>
+                <p>Lorem ipsum </p>
+              </li>
+              <li>
+                <div class="benefits-statistics__image"><img src="./img/advantage-apple.png" alt="" width="25" height="23"></div>
+                <p>Lorem ipsum Apple Wallet</p>
+              </li>
+            </ul>
+          </div>
+          <div class="benefits-statistics__statistics">
+            <h3 class="benefits-statistics__title"><span>Donec</span></h3>
+            <ul class="benefits-statistics__list">
+              <li><span class="benefits-statistics__numbers">892</span>
+                <p>mauris sed </p>
+              </li>
+              <li><span class="benefits-statistics__numbers">68</span>
+                <p>mauris sed eros ut</p>
+              </li>
+              <li><span class="benefits-statistics__numbers">86</span>
+                <p>mauris sed eros</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
