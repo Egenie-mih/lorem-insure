@@ -1,0 +1,73 @@
+html
+body
+	height 100%
+	width 100%
+
+body
+	font-size 14px
+	font-weight 400
+	line-height 1.2
+	min-width 320px
+	@media desktop-widths
+		min-width 1600px
+
+body
+input
+button
+textarea
+	font-family 'Roboto', 'Arial', sans-serif
+
+input
+button
+textarea
+	ibreset()
+
+button
+	cursor pointer
+	&::-moz-focus-inner
+	&::-moz-focus-inner
+		border: 0
+		padding: 0
+
+a
+	text-decoration none
+	color #000
+
+em
+i
+	font-style italic
+
+b
+strong
+	font-weight bold
+input:focus::-webkit-input-placeholder {
+	opacity: 0;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
+input:focus::-moz-placeholder {
+	opacity: 0;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
+input:focus:-moz-placeholder {
+	opacity: 0;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
+input:focus:-ms-input-placeholder {
+	opacity: 0;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
+
+.content-hidden
+	display none

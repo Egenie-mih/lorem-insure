@@ -1,0 +1,400 @@
+.insure-selection
+  background-color #f7f7f7
+  padding 0 25px
+  box-sizing border-box
+  margin 0 auto
+  position relative
+  &::after
+    content ''
+    bottom 0
+    left 0
+    width 100%
+    height 30px
+    position absolute
+    z-index 3
+    box-shadow 0px 8px 16px #e7e7e7
+
+  &__wrapper
+    margin 0 auto
+    padding-bottom 10px
+    display flex
+    flex-direction column
+    flex-wrap wrap
+    text-align left
+    align-items flex-start
+    position relative
+
+  &__select-block
+    width 100%
+    margin-bottom 20px
+    position relative
+    &::before
+      content ''
+      position absolute
+      z-index 2
+      right 24px
+      bottom 14px
+      transform translateY(-50%)
+      width 0
+      height 0
+      border-left 5px solid transparent
+      border-right 5px solid transparent
+      border-top 5px solid rgba(0,0,0,.32)
+    & label
+      display block
+      color #888888
+      font-size 12px
+      margin-bottom 8px
+    & input
+      color #000000
+      &:hover
+        color violet
+      &::-webkit-input-placeholder
+          color gray
+      &:-ms-input-placeholder
+          color gray
+      &::-ms-input-placeholder
+          color gray
+      &:-moz-placeholder
+          opacity: 1
+          color gray
+      &::-moz-placeholder
+          opacity: 1
+          color gray
+      &::placeholder
+          opacity: 1
+          color gray
+    &--place
+      margin-bottom 16px
+      .insure-selection__select-input
+        padding-left 45px
+        padding-right 45px
+        background-image url('../img/place-24.png')
+
+    &--calendar
+      .insure-selection__select-input
+        padding-left 45px
+        padding-right 45px
+        background-image url('../img/calendar-24.png')
+
+    &--person
+      position relative
+      .insure-selection__select-input
+        padding-left 45px
+        padding-right 45px
+        background-image url('../img/person-24.png')
+
+    &--activities
+      .insure-selection__select-input
+        padding-left 45px
+        padding-right 45px
+        background-image url('../img/activities-24.png')
+  &__select-additional
+    width 100%
+    display flex
+    flex-wrap wrap
+    flex-direction column
+  &__select-input
+    background-repeat no-repeat
+    background-position 15px center
+    width 100%
+    padding 9px 20px
+    height 40px
+    border-radius 10px
+    box-sizing border-box
+    background-color #f8f8f8
+    font-size 14px
+    border 1px solid #e5e5e5
+
+  &__person
+    position absolute
+    z-index 20
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    justify-content: space-between;
+    width 228px
+    box-sizing border-box
+    left 0px
+    margin-top 9px
+    background-color #ffffff
+    padding 11px 16px 16px
+    border-radius 10px
+    &::before
+      content ""
+      position absolute
+      width 10px
+      height 10px
+      top -4px
+      left 0
+      right 0
+      margin 0 auto
+      background-color #ffffff
+      transform rotate(45deg)
+    &-item
+      border-radius 10px
+      display flex
+      align-items center
+      justify-content space-between
+      width 93px
+      box-sizing border-box
+      padding 9px 12px
+      border 1px solid rgba(0,0,0,.32)
+      cursor pointer
+      &:nth-of-type(n+3)
+        margin-top 10px
+      &--default
+        border-style dashed
+      & input
+        width 55px
+        border 0
+        color #000000
+        font-size 14px
+      & button
+        font-size 0
+        width 10px
+        height 10px
+        background-color transparent
+        border 0
+        position relative
+        &:before, &:after
+          position: absolute
+          top 0
+          left 7px
+          content ''
+          height 10px
+          width 1px
+          background-color #000
+          opacity .24
+        &:before
+          transform rotate(45deg)
+        &:after
+          transform rotate(-45deg)
+        &:hover:before,
+        &:hover:after
+          opacity 1
+    &-caption
+      color gray
+      font-size 12px
+      width 100%
+      margin-bottom 9px
+
+  &__checkbox-block
+    padding-left 25px
+    margin-right 13px
+    margin-bottom 10px
+    & input[type="checkbox"]
+      display: none;
+    & label
+      font-size 14px
+      color #000000
+      position relative
+    & input[type="checkbox"]+label::before
+        content ''
+        display block
+        width 16px
+        height 16px
+        position absolute
+        left -25px
+        top 1px
+        background-color #ffffff
+        border 1px solid #e5e5e5
+        border-radius 4px
+    & input[type="checkbox"]+label:hover::before
+      border-color green
+    & input[type="checkbox"]:checked+label::before
+      background-color green
+      background-image url('../img/rectangle.png')
+      background-repeat no-repeat
+      background-position center
+
+  &__button
+    min-height 40px
+    display block
+    width 142px
+    box-sizing border-box
+    margin 0 auto
+    text-align center
+    margin-top 10px
+    text-transform uppercase
+    color #ffffff
+    font-size 12px
+    background-color green
+    border 0
+    border-radius 30px
+    padding 12px 10px
+    &:hover
+      background-color violet
+  &__button-additional
+    position absolute
+    z-index 1
+    bottom 0
+    left 50%
+    transform translate(-50%, 100%)
+    font-size 12px
+    color #888888
+    padding 8px 16px
+    border 1px solid #e5e5e5
+    border-top 0
+    border-radius 0 0 10px 10px
+    background-color #f8f8f8
+    &::after
+      content ''
+      display inline-block
+      vertical-align middle
+      z-index 2
+      margin-left 5px
+      width 0
+      height 0
+      border-left 5px solid transparent
+      border-right 5px solid transparent
+      border-top 5px solid rgba(0,0,0,.32)
+    &:hover
+      color violet
+      &::after
+        border-top-color violet
+        border-bottom-color violet
+    &--opened
+      &::after
+        content ''
+        display inline-block
+        vertical-align middle
+        z-index 2
+        margin-left 5px
+        width 0
+        height 0
+        border-left 5px solid transparent
+        border-right 5px solid transparent
+        border-top 0
+        border-bottom 5px solid rgba(0,0,0,.32)
+
+
+@media tablet-small-widths
+  .insure-selection
+    &__wrapper
+      width 687px
+      flex-direction row
+    &__select-additional
+      display flex
+      flex-wrap wrap
+      flex-direction row
+    &__select-block
+      &--place
+        width 100%
+        box-sizing border-box
+        .insure-selection__select-input
+          border-radius 10px
+      &--calendar
+        width 250px
+        .insure-selection__select-input
+          border-radius 10px 0 0 10px
+      &--person
+        width 159px
+        margin-left -1px
+        .insure-selection__select-input
+          border-radius 0px
+      &--activities
+        width 280px
+        margin-left -1px
+        .insure-selection__select-input
+          border-radius 0 10px 10px 0
+      &--medicine
+        width 180px
+        .insure-selection__select-input
+          border-radius 10px 0 0 10px
+      &--luggage
+        margin-left -1px
+        width 170px
+        .insure-selection__select-input
+          border-radius 0px
+      &--civil
+        margin-left -1px
+        width 190px
+        .insure-selection__select-input
+          border-radius 0px
+      &--accident
+        margin-left -1px
+        width 150px
+        .insure-selection__select-input
+          border-radius 0 10px 10px 0
+    &__person
+      left -27px
+    &__button
+      display block
+      width 162px
+@media tablet-large-widths
+  .insure-selection
+    &__wrapper
+      width 912px
+      align-items flex-end
+    &__select-additional
+      align-items center
+      order 1
+    &__select-block
+      &--calendar
+        width 268px
+      &--person
+        width 179px
+      &--activities
+        width 306px
+        .insure-selection__select-input
+          border-radius 0
+      &--medicine
+        width 148px
+      &--luggage
+        width 140px
+      &--civil
+        width 190px
+      &--accident
+        width 129px
+        margin-right 20px
+    &__button
+      width 160px
+      margin 0
+      margin-bottom 20px
+      border-radius 0 10px 10px 0
+  &__select-input
+    font-size 16px
+
+
+
+
+@media desktop-widths
+  .insure-selection
+    padding 25px
+    &__wrapper
+      width 1550px
+    &__select-block
+      &--place
+        width 710px
+        margin-bottom 20px
+        .insure-selection__select-input
+          border-radius 10px 0 0 10px
+      &--calendar
+        margin-left -1px
+        width 249px
+        .insure-selection__select-input
+          border-radius 0
+      &--person
+        width 155px
+      &--activities
+        width 295px
+        .insure-selection__select-input
+          border-radius 0
+      &--medicine
+        width 300px
+      &--luggage
+        width 300px
+      &--civil
+        width 300px
+      &--accident
+        width 300px
+        margin-right 20px
+
+    &__button
+      width 142px
+    &__button-additional
+      left initial
+      right 0px
+      bottom -25px
+      transform translate(0, 100%)

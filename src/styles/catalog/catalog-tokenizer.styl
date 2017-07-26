@@ -1,0 +1,77 @@
+//tokenize
+.main-selection__select .tokenize
+  width 100%
+  margin-bottom 20px
+  position relative
+  &::before
+    content ''
+    position absolute
+    z-index 2
+    right 24px
+    top 50%
+    transform translateY(-50%)
+    width 0
+    height 0
+    border-left 5px solid transparent
+    border-right 5px solid transparent
+    border-top 5px solid rgba(0,0,0,.32)
+.insure-selection__select-block .tokenize
+  margin-bottom 0
+.insure-selection__select-block .tokenize > .tokens-container
+  padding 5px 45px 10px
+  min-height 40px
+  border-radius 10px
+  box-sizing border-box
+  background-color #f8f8f8
+  font-size 14px
+  border 1px solid #e5e5e5
+  @media tablet-small-widths
+    width 100%
+  @media desktop-widths
+    width 710px
+    border-radius 10px 0 0 10px
+.tokenize > .tokens-container
+  background-image url('../img/place-24.png')
+  background-repeat no-repeat
+  background-position 15px center
+  padding 10px 45px 14px
+  border-radius 10px
+  box-sizing border-box
+  border 0
+  background-color #fff
+  font-size 14px
+.tokenize > .tokens-container
+  .placeholder
+    color #888888
+    font-size 12px
+    margin-top 5px
+  .token
+    border 0
+    background-color transparent
+  .dismiss
+    width 10px
+    height 10px
+    background-color transparent
+    text-decoration none
+    border 0
+    position absolute
+    right 5px
+    top 0
+    bottom 0
+    margin auto 0
+    &:before, &:after
+      position: absolute
+      top 0
+      left 7px
+      content ''
+      height 10px
+      width 1px
+      background-color #000
+      opacity .24
+    &:before
+      transform rotate(45deg)
+    &:after
+      transform rotate(-45deg)
+    &:hover:before,
+    &:hover:after
+      opacity 1

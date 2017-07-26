@@ -1,0 +1,101 @@
+
+
+.insure-catalog__block-shown .insure-catalog__services-list,
+.insure-catalog__block-shown .insure-catalog__risk-link
+  display none
+.insure-catalog__block-shown--small .insure-catalog__services-list,
+.insure-catalog__block-shown--small .insure-catalog__risk-link
+  display block
+
+.insure-catalog__list--small
+  display flex
+  flex-direction row
+  justify-content space-between
+  flex-wrap wrap
+  align-items flex-start
+  .insure-catalog__banner
+    border-radius 10px
+    margin-bottom 20px
+  .insure-catalog__item
+    width 290px
+    margin 0
+    margin-bottom 20px
+    &:before
+      display none
+    @media tablet-small-widths
+      width 335px
+    @media tablet-large-widths
+      width 290px
+    @media desktop-widths
+      width 335px
+.insure-catalog__block-shown--small
+  position relative
+  padding 0
+  margin 0
+  border-radius 10px
+
+  .insure-catalog__company
+    flex-direction column
+    margin 0
+    padding 20px 30px 15px
+    width 100%
+    box-sizing border-box
+    & img
+      position static
+      margin-bottom 20px
+      margin-right 0
+  .insure-catalog__title
+    text-align center
+    margin-bottom 10px
+  .insure-catalog__main-info
+    font-size 12px
+    text-align center
+    & li:nth-child(n+2)
+      display none
+    @media tablet-large-widths
+      text-align left
+      & li:nth-child(n+2)
+        display block
+  .insure-catalog__rating
+    position absolute
+    left auto
+    right 15px
+    top 15px
+    z-index 5
+    width 40px
+  .insure-catalog__badges
+    position absolute
+    left 15px
+    top 10px
+    width auto
+    max-width 90px
+  .insure-catalog__risk
+    display none
+  .insure-catalog__risk-link
+    margin 0 30px 0 45px
+    font-size 12px
+    color gray
+    border-bottom 1px dashed gray
+    width auto
+    display inline-block
+    &:hover
+      color violet
+      border-color violet
+
+
+  .insure-catalog__price--base
+    margin-left 0
+    width 100%
+    padding 20px
+    box-sizing border-box
+    text-align center
+    border-top 1px solid #eeeeee
+    margin-top 30px
+    display block
+  .insure-catalog__button-additional
+    display none
+  .insure-catalog__services-list
+    padding 0 30px
+    font-size 12px
+    & li
+      width 100%

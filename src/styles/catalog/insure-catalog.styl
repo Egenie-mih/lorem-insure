@@ -1,0 +1,730 @@
+.insure-content
+  background-color #f7f7f7
+  &__wrapper
+    padding 15px
+    padding-top 75px
+
+.insure-catalog
+  width 290px
+  margin 0 auto
+
+
+  // FILTER
+  &__filter
+    position relative
+    margin-bottom 25px
+    display flex
+    flex-direction row
+    justify-content space-between
+    align-items flex-start
+  &__filter-selection
+    font-size 0
+    position absolute
+    right 15px
+    top 5px
+    border 0
+    padding 10px
+    background-color transparent
+    &::before
+      content ''
+      position absolute
+      z-index 2
+      right 0px
+      bottom 0px
+      transform translateY(-50%)
+      width 0
+      height 0
+      border-left 5px solid transparent
+      border-right 5px solid transparent
+      border-top 5px solid rgba(0,0,0,.32)
+
+  &__filter-name-wrapper
+    position relative
+    border-radius 10px
+    background-color #ffffff
+    height 40px
+    overflow hidden
+
+  &__filter-name
+    width 190px
+    color gray
+    display block
+    padding 13px 20px
+    min-height 40px
+    box-sizing border-box
+    &--active
+      color green
+    &:hover
+      color violet
+    & svg
+      display none
+
+  &__filter-view-wrapper
+    display flex
+    flex-direction row
+    align-items flex-start
+    border-radius 10px
+    background-color #ffffff
+
+  &__filter-view
+    font-size 0
+    width 40px
+    min-height 40px
+    padding 10px
+    box-sizing border-box
+    background-color transparent
+    border 0
+    text-decoration none
+    & svg
+      opacity .24
+      width 18px
+      height 18px
+    &:hover
+      svg
+        opacity 1
+        fill violet
+    &--active
+      &:hover
+        & svg
+          fill green
+      & svg
+        opacity 1
+        fill green
+    &--block
+      border-right 1px solid #f7f7f7
+
+
+
+
+
+
+  &__list
+    margin 12px 0 37px
+    display flex
+    flex-direction column
+  &__item
+    position relative
+  &__list .insure-catalog__item--toggle:first-child
+    margin-top 10px
+
+  &__item:first-child
+    margin-top 10px
+    &:before
+      content ''
+      position absolute
+      top -10px
+      left 0
+      display block
+      background-color #fff
+      height 10px
+      width 100%
+      border-radius 10px 10px 0 0
+
+  &__item--toggle
+    margin-bottom 20px
+    margin-top 30px
+    border-radius 10px
+    position relative
+    &:before
+      content ''
+      position absolute
+      top -10px
+      left 0
+      display block
+      background-color #fff
+      height 10px
+      width 100%
+      border-radius 10px 10px 0 0
+    .insure-catalog__block-shown
+      padding-top 25px
+    & + .insure-catalog__item
+      margin-top 10px
+      position relative
+      &:before
+        position absolute
+        content ''
+        top -10px
+        left 0
+        display block
+        background-color #fff
+        height 10px
+        width 100%
+        border-radius 10px 10px 0 0
+    &--opened
+      margin 10px 0
+      border-radius 10px
+      overflow hidden
+
+
+  &__block-shown
+    background-color #ffffff
+    padding 25px 24px 30px
+    border-bottom 1px solid #eeeeee
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    justify-content space-between
+    align-items center
+  &__company
+    width 100%
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    align-items center
+    margin-bottom 20px
+    & img
+      width 40px
+      height 40px
+      margin-right 16px
+  &__title
+    font-size 18px
+    font-weight 400
+    width 175px
+  &__main-info
+    width 100%
+    margin-top 20px
+    color gray
+    font-size 12px
+    li
+      margin-bottom 8px
+  &__risk
+    width 70px
+    font-size 12px
+  &__badges
+    width 120px
+    text-align center
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    justify-content center
+    & img
+      width 24px
+      height 24px
+      margin 0 3px
+    &-info
+      position relative
+      &:hover>.insure-catalog__badges-hint
+          display block
+    &-hint
+      hint()
+  &__rating
+    width 40px
+    text-align right
+    font-size 12px
+    &::before
+      content ''
+      display inline-block
+      vertical-align middle
+      width 11px
+      height 11px
+      position relative
+      left -4px
+      bottom 2px
+      background-image url("../img/star.gif")
+      background-repeat no-repeat
+  &__price
+    font-size 14px
+    font-weight 700
+    color green
+    text-transform uppercase
+    &--base
+      margin-top 25px
+      width 100%
+      &:hover
+        color violet
+    &--total
+      font-size 24px
+      margin-right 15px
+      display block
+
+  &__button-additional
+    position absolute
+    font-size 0
+    right 25px
+    top 28px
+    padding 10px
+    background-color transparent
+    border 0
+    &::before
+      content ''
+      position absolute
+      z-index 2
+      right 0
+      bottom 0
+      width 0
+      height 0
+      border-left 5px solid transparent
+      border-right 5px solid transparent
+      border-top 5px solid rgba(0,0,0,.32)
+
+
+
+
+  &__block-hidden
+    background-color #ffffff
+    border-radius 0 0 10px 10px
+    padding-left 24px
+    padding-right 24px
+    padding-bottom 20px
+
+    font-size 12px
+    display flex
+    flex-direction column
+
+  &__assistance-links
+    padding 25px 0 15px
+  &__assistance
+    margin-bottom 15px
+    color gray
+    &-type
+      margin-right 5px
+    &-name
+      color #000000
+    &-hint-block
+      display inline-block
+      position relative
+      &:hover>.insure-catalog__assistance-hint
+          display block
+    &-hint-button
+      font-size 11px
+      border-radius 50%
+      color gray
+      border 1px solid
+      width 12px
+      height 12px
+      display inline-block
+      text-align center
+      line-height 12px
+      margin-left 2px
+
+    &-hint
+      hint()
+  &__links
+    & a
+      display block
+      margin-bottom 15px
+      text-decoration underline
+      text-decoration-color #eeeeee
+      &:hover
+        color violet
+        text-decoration-color green
+
+  &__services
+    border-top 1px solid #eeeeee
+    padding 28px 0
+  &__services-title
+    color gray
+    margin-bottom 10px
+  &__services-list
+    & li
+      position relative
+      display flex
+      flex-direction row
+      flex-wrap wrap
+      // justify-content space-between
+      margin-bottom 10px
+      margin-left 15px
+      &::before
+        content ''
+        position absolute
+        width 4px
+        height 4px
+        border-radius 50%
+        background-color #000
+        left -15px
+        top 0.4em
+        display block
+    &--full
+      & li
+        &::after
+          content ''
+          position absolute
+          width 100%
+          height 1px
+          display block
+          top 10px
+          left 0
+          background-image repeating-linear-gradient(90deg, #eee, #eee 1px, #fff 1px, #fff 2px)
+      span
+        max-width 163px
+        background-color #ffffff
+        position relative
+        z-index 3
+        &:last-child
+          margin 0 auto
+          margin-right 0px
+
+
+  &__form
+    border-top 1px solid #eeeeee
+    padding-top 28px
+    font-size 14px
+  &__form-title
+    margin-bottom 22px
+  &__fieldset-luggage
+    margin-bottom 15px
+  &__fieldset-accident
+    margin-bottom 15px
+  &__fieldset-responsibility
+    margin-bottom 15px
+  &__legend
+    width 100%
+    font-size 12px
+    color gray
+    margin-bottom 15px
+  &__radio-block
+    color gray
+    margin-bottom 12px
+    padding-left 27px
+    & input[type="radio"]
+      display: none;
+    & label
+      position relative
+    & input[type="radio"]+label::before
+        content ''
+        display block
+        width 16px
+        height 16px
+        position absolute
+        left -27px
+        top 1px
+        background-color #ffffff
+        border 1px solid #e5e5e5
+        border-radius 50%
+        box-sizing border-box
+    & input[type="radio"]+label:hover::before
+      border-color green
+    & input[type="radio"]:checked+label
+      color #000000
+    & input[type="radio"]:checked+label::before
+        border 5px solid green
+  &__value
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    align-items center
+    .insure-catalog__legend
+      margin-bottom 0px
+  &__button-buy
+    width 122px
+    box-sizing border-box
+    text-align center
+    text-transform uppercase
+    color #ffffff
+    font-size 12px
+    background-color green
+    border 0
+    border-radius 30px
+    padding 12px 10px
+    &:hover
+      background-color violet
+
+  &__button-more
+    width 160px
+    text-align center
+    box-sizing border-box
+    margin 0 auto
+    padding 14px 18px
+    border 1px dashed gray
+    border-radius 20px
+    font-size 12px
+    font-weight 700
+    text-transform uppercase
+    display block
+    color gray
+    margin-top 30px
+    margin-bottom 60px
+    &:hover
+      color violet
+      border-color violet
+
+  &__banner
+    width 100%
+    box-sizing border-box
+    order 1
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    align-items center
+    justify-content space-between
+    background-color #ffffff
+    padding 30px 20px
+    margin-bottom 20px
+    margin-top 20px
+    border-radius 10px
+
+    &-title
+      font-size 18px
+      line-height 20px
+      width 110px
+    & img
+      width 104px
+      height auto
+    & p
+      width 100%
+      margin-top 30px
+      font-size 14px
+      line-height 22px
+
+
+
+
+
+
+@media tablet-small-widths
+  .insure-catalog
+    width 688px
+    margin 0 auto
+
+    // FILTER
+    &__filter
+      justify-content flex-start
+    &__filter-name-wrapper
+      display flex
+      flex-direction row
+      flex-wrap wrap
+    &__filter-selection
+      display none
+    &__block-shown
+      position relative
+      align-items flex-start
+      justify-content flex-start
+    &__filter-name
+      width 202px
+      font-size 12px
+      text-decoration none
+      text-align center
+      border-right 1px solid #f7f7f7
+      & svg
+        display inline-block
+        fill gray
+      &:hover
+        & svg
+          fill violet
+      &--active
+        & svg
+          fill green
+        &:hover
+          color green
+          & svg
+            fill green
+    &__filter-name-wrapper
+      border-radius 10px 0 0 10px
+    &__filter-view-wrapper
+      border-radius 0 10px 10px 0
+
+    &__company
+      position relative
+      width 300px
+      box-sizing border-box
+      padding-left 57px
+      margin-bottom 0
+      & img
+        position absolute
+        left 0
+        top 0
+    &__title
+      margin-bottom 5px
+    &__main-info
+      margin-top 0
+    &__risk
+      width 70px
+    &__rating
+      position absolute
+      left 324px
+      top 45px
+      text-align left
+    &__price--base
+      width 140px
+      margin-top 0
+    &__button-additional::before
+      top 0
+
+
+    &__assistance-links
+      display flex
+      flex-direction row
+      flex-wrap wrap
+      justify-content space-between
+    &__assistance
+      width 300px
+    &__links
+      display flex
+      flex-direction row
+      flex-wrap wrap
+      justify-content flex-end
+      & a
+        margin-left 20px
+    &__services-list
+      display flex
+      flex-direction row
+      flex-wrap wrap
+      justify-content space-between
+      & li
+        width 280px
+
+    &__form-wrapper
+      display flex
+      flex-direction row
+      flex-wrap wrap
+      justify-content space-between
+    &__fieldset-luggage
+      width 200px
+      margin-right 42px
+    &__fieldset-wrapper
+      width 200px
+      display flex
+      flex-direction column
+
+    &__value
+      width 137px
+      flex-direction column
+      align-items flex-start
+    &__price--total
+      margin 10px 0 15px
+    &__banner
+      order 0
+      position relative
+      padding-left 165px
+      flex-direction column
+      margin 0
+      border-radius 0
+      border-bottom 1px solid #eeeeee
+      &-title
+        width 100%
+      & img
+        position absolute
+        left 30px
+        top 30px
+      & p
+        margin-top 10px
+
+
+
+
+
+@media tablet-large-widths
+  .insure-catalog
+    width 914px
+    // FILTER
+    &__filter-name
+      width 236px
+      font-size 14px
+    &__filter-view
+      width 100px
+      & svg
+        display block
+        margin 0 auto
+
+    &__block-shown
+      justify-content flex-start
+    &__company
+      width 350px
+    &__risk
+      width 100px
+      text-align center
+    &__rating
+      position static
+      width 84px
+      text-align center
+    &__badges
+      width 128px
+    &__button-additional
+      max-width 200px
+      padding-right 20px
+      font-size 16px
+      top 48px
+      text-decoration underline
+      text-decoration-color #eee
+      &::before
+        top 0
+        margin auto 0
+      &:hover
+        color violet
+        text-decoration-color violet
+
+
+
+    &__block-hidden
+      padding-left 0
+      padding-right 0
+      flex-wrap wrap
+      flex-direction row
+
+    &__assistance-links
+      margin-left 80px
+      width 170px
+      margin-right 43px
+      flex-direction column
+      justify-content flex-start
+    &__assistance
+      width 100%
+      padding-bottom 20px
+      margin-bottom 20px
+      border-bottom 1px solid #eeeeee
+      &-type
+        display block
+        margin-bottom 10px
+    &__links
+      align-items flex-start
+      justify-content flex-start
+      & a
+        margin-left 0
+    &__services
+      border-top 0
+      width 584px
+    &__services-list
+      & li
+        width 270px
+    &__form
+      width 100%
+      padding-left 80px
+      padding-right 43px
+      box-sizing border-box
+    &__fieldset-wrapper
+      width 410px
+      flex-direction row
+      justify-content space-between
+    &__fieldset-accident
+      width 180px
+    &__fieldset-responsibility
+      width 200px
+    &__price--base
+      margin 0 auto
+      margin-right 0
+    &__banner
+      border-radius 0px
+      margin-bottom 0
+      border-bottom 1px solid #eeeeee
+
+
+
+
+@media desktop-widths
+  .insure-content__wrapper
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    max-width 1600px
+    margin 0 auto
+  .insure-catalog
+    width 1236px
+    margin 0
+
+    // FILTER
+    &__filter-name
+      width 345px
+    &__list
+      width 1236px
+    &__company
+      margin-right 50px
+    &__assistance-links
+      margin-right 171px
+    &__fieldset-wrapper
+      width 500px
+    &__banner
+      align-items flex-start
+      &-title
+        width 584px
+      & p
+        width 584px

@@ -1,0 +1,53 @@
+.insure-selection
+    form(action="#" method="get")
+        .insure-selection__wrapper
+            .insure-selection__select-block.insure-selection__select-block--place
+                label(for="place") Куда вы собираетесь?
+                select(multiple id="place").main-selection__select
+                  option(value="Франция") Франция
+                  option(value="Россия") Россия
+                  option(value="Норвегия") Норвегия
+                  option(value="Италия") Италия
+                  option(value="Испания") Испания
+                  option(value="Весь мир" selected) Весь мир
+                  option(value="Американское Самоа" selected) Американское Самоа
+            .insure-selection__select-block.insure-selection__select-block--calendar
+                label(for="calendar") Дата поездки:
+                input(type="text" id="calendar" placeholder="Выберите дату поездки" value="25.06.2017 – 02.07.2017").insure-selection__select-input
+            .insure-selection__select-block.insure-selection__select-block--person
+                label(for="person") Количество и возраст:
+                input(type="text" id="person" placeholder="Выберите количество человек" value="3 туриста").insure-selection__select-input
+                .insure-selection__person
+                    span.insure-selection__person-caption Возраст туристов:
+                    .insure-selection__person-item
+                        input(type="text" id="person1" placeholder="+ турист" value="30 лет")
+                        button(type="button") Remove
+                    .insure-selection__person-item
+                        input(type="text" id="person2" placeholder="+ турист" value="38 лет")
+                        button(type="button") Remove
+                    .insure-selection__person-item.insure-selection__person-item--default
+                      input(type="text" id="person3" placeholder="+ турист")
+            .insure-selection__select-block.insure-selection__select-block--activities
+                label(for="activities") Тип отдыха:
+                input(type="text" id="activities" placeholder="Выберите тип отдыха" value="Тренировки или соревнования").insure-selection__select-input
+            .insure-selection__select-additional
+                .insure-selection__select-block.insure-selection__select-block--medicine
+                    label(for="medicine") Медицинское покрытие:
+                    input(type="text" id="medicine" value="30 000 €").insure-selection__select-input
+                .insure-selection__select-block.insure-selection__select-block--luggage
+                    label(for="luggage") Страхование багажа:
+                    input(type="text" id="luggage" value="500 €").insure-selection__select-input
+                .insure-selection__select-block.insure-selection__select-block--civil
+                    label(for="civil") Гражданская ответственность:
+                    input(type="text" id="civil" value="10 000 €").insure-selection__select-input
+                .insure-selection__select-block.insure-selection__select-block--accident
+                    label(for="accident") Несчастный случай:
+                    input(type="text" id="accident" value="30 000 €").insure-selection__select-input
+                .insure-selection__checkbox-block
+                    input(type="checkbox" id="abroad" name="abroad")
+                    label(for="abroad" tabindex="0") Я уже за границей
+                .insure-selection__checkbox-block
+                    input(type="checkbox" id="pregnancy" name="pregnancy")
+                    label(for="pregnancy" tabindex="0") Я беременна
+            button(type="submit").insure-selection__button Пересчитать
+            button(type="button").insure-selection__button-additional Дополнительно

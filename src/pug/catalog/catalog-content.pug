@@ -1,0 +1,711 @@
+section.insure-catalog
+
+      .insure-catalog__filter
+          .insure-catalog__filter-name-wrapper
+            button(type="button").insure-catalog__filter-selection Показать остальные фильтры
+            a(href="#").insure-catalog__filter-name.insure-catalog__filter-name--active по стоимости
+              svg(xmlns="http://www.w3.org/2000/svg" width="5" height="7" viewBox="0 0 5 7")
+                path(class="cls-1" d="M0 4h5l-2.5 3ZM2 0h1v5h-1v-5Z")
+            a(href="#").insure-catalog__filter-name по рейтингу
+              svg(xmlns="http://www.w3.org/2000/svg" width="5" height="7" viewBox="0 0 5 7")
+                path(class="cls-1" d="M0 4h5l-2.5 3ZM2 0h1v5h-1v-5Z")
+            a(href="#").insure-catalog__filter-name по популярности
+              svg(xmlns="http://www.w3.org/2000/svg" width="5" height="7" viewBox="0 0 5 7")
+                path(class="cls-1" d="M0 4h5l-2.5 3ZM2 0h1v5h-1v-5Z")
+          .insure-catalog__filter-view-wrapper
+            button(type="button").insure-catalog__filter-view.insure-catalog__filter-view--block Вид блоками
+              svg(xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18")
+                path(data-name="01 cards" class="cls-1" d="M0 0h4v4h-4v-4Zm7 0h4v4h-4v-4Zm7 0h4v4h-4v-4Zm-14 7h4v4h-4v-4Zm7 0h4v4h-4v-4Zm7 0h4v4h-4v-4Zm-14 7h4v4h-4v-4Zm7 0h4v4h-4v-4Zm7 0h4v4h-4v-4Z")
+            button(type="button").insure-catalog__filter-view.insure-catalog__filter-view--list.insure-catalog__filter-view--active Вид списком
+              svg(xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18")
+                path(data-name="02 list" class="cls-1" d="M0 0h4v4h-4v-4Zm7 1h11v2H7v-2Zm-7 6h4v4h-4v-4Zm7 1h11v2H7v-2Zm-7 6h4v4h-4v-4Zm7 1h11v2H7v-2Z")
+
+      .insure-catalog__list
+        article.insure-catalog__item
+            .insure-catalog__block-shown
+                .insure-catalog__company
+                    img(src="./img/alfa.png" alt="" width="40" height="40")
+                    h2.insure-catalog__title: span АльфаСтрахование
+                    ul.insure-catalog__main-info
+                        li Медицинское страхование на 40&nbsp;000&nbsp;€
+                        li Страхование багажа 500&nbsp;€
+                        li Гражданская ответственность 10&nbsp;000&nbsp;€
+                        li Несчастный случай 30&nbsp;000&nbsp;€
+                .insure-catalog__risk 10 рисков
+                .insure-catalog__badges
+                    .insure-catalog__badges-info
+                      .insure-catalog__badges-hint Подходит для шенгена
+                      img(src="./img/schengen.png" alt="" width="24" height="24")
+                    .insure-catalog__badges-info
+                      .insure-catalog__badges-hint Сезонная скидка
+                      img(src="./img/discount.png" alt="" width="24" height="24")
+                .insure-catalog__rating 4,5
+                ul.insure-catalog__services-list.insure-catalog__services-list--small
+                    li Медицинская помощь
+                    li Экстренная стоматология
+                    li Хронические заболевания
+                    li Медицинская помощь при ожогах
+                    li Поисково-спасательные мероприятия
+                a(href="#").insure-catalog__risk-link +15 рисков
+
+                a(href="#").insure-catalog__price.insure-catalog__price--base Купить за 2&nbsp;632 &#8381;
+                button(type="button").insure-catalog__button-additional Дополнительно
+            .insure-catalog__block-hidden
+                .insure-catalog__assistance-links
+                    .insure-catalog__assistance
+                        span.insure-catalog__assistance-type Ассистант:
+                        span.insure-catalog__assistance-name Class Assistance
+                        .insure-catalog__assistance-hint-block
+                          span.insure-catalog__assistance-hint-button ?
+                          .insure-catalog__assistance-hint При наступлении страхового случая за границей сервис по урегулированию предоставляет указанная компания.
+                    .insure-catalog__links
+                        a(href="#") Правила страхования
+                        a(href="#") Образец поиска
+                .insure-catalog__services
+                    .insure-catalog__services-title В&nbsp;полис включено:
+                    ul.insure-catalog__services-list.insure-catalog__services-list--full
+                        li
+                            span Медицинская помощь
+                            span 10&nbsp;000&nbsp;€
+                        li
+                            span Экстренная стоматология
+                            span 3&nbsp;000&nbsp;€
+                        li
+                            span Хронические заболевания
+                            span 50&nbsp;000&nbsp;€
+                        li
+                            span Медицинская помощь при ожогах
+                            span 5&nbsp;000&nbsp;€
+                        li
+                            span Поисково-спасательные мероприятия
+                            span 25&nbsp;000&nbsp;€
+                        li
+                            span Медицинская помощь при аллергиях
+                            span 500&nbsp;€
+                        li
+                            span Медицинская помощь при ожогах
+                            span 1 500&nbsp;€
+                        li
+                            span Медикаменты
+                            span 50&nbsp;000&nbsp;€
+                        li
+                            span Медицинское оборудование
+                            span 10&nbsp;000&nbsp;€
+                        li
+                            span Переводчик
+                            span 30&nbsp;000&nbsp;€
+                .insure-catalog__form
+                  .insure-catalog__form-title Дополнительно:
+                  form(action="#" method="get")
+                      .insure-catalog__form-wrapper
+                          fieldset.insure-catalog__fieldset-luggage
+                            div.insure-catalog__legend Страхование багажа:
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage1" name="luggage")
+                                label(for="luggage1" tabindex="0") Не покрывается
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage2" name="luggage")
+                                label(for="luggage2" tabindex="0") 500&nbsp;€ за 191 &#8381;
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage3" name="luggage")
+                                label(for="luggage3" tabindex="0") 1&nbsp;000&nbsp;€ за 383 &#8381;
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage4" name="luggage")
+                                label(for="luggage4" tabindex="0") 1 500&nbsp;€ за 574 &#8381;
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage5" name="luggage")
+                                label(for="luggage5" tabindex="0") 2&nbsp;000&nbsp;€ за 765 &#8381;
+                          .insure-catalog__fieldset-wrapper
+                              fieldset.insure-catalog__fieldset-accident
+                                div.insure-catalog__legend Несчастный случай:
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="accident1" name="accident")
+                                    label(for="accident1" tabindex="0") Не покрывается
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="accident2" name="accident")
+                                    label(for="accident2" tabindex="0") 500&nbsp;€ за 191 &#8381;
+                              fieldset.insure-catalog__fieldset-responsibility
+                                div.insure-catalog__legend Страхование ответственности:
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="responsibility1" name="responsibility")
+                                    label(for="responsibility1" tabindex="0") Не покрывается
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="responsibility2" name="responsibility")
+                                    label(for="responsibility2" tabindex="0") 500&nbsp;€ за 191 &#8381;
+                          .insure-catalog__value
+                              div.insure-catalog__legend Итого:
+                              strong.insure-catalog__price.insure-catalog__price--total 1 684 &#8381;
+                              button(type="submit").insure-catalog__button-buy Купить
+        article.insure-catalog__item
+            .insure-catalog__block-shown
+                .insure-catalog__company
+                    img(src="./img/tinkoff.png" alt="" width="40" height="40")
+                    h2.insure-catalog__title: span Тинькофф
+                    ul.insure-catalog__main-info
+                        li Медицинское страхование на 40&nbsp;000&nbsp;€
+                        li Страхование багажа 500&nbsp;€
+                        li Гражданская ответственность 10&nbsp;000&nbsp;€
+                        li Несчастный случай 30&nbsp;000&nbsp;€
+                .insure-catalog__risk 8 рисков
+                .insure-catalog__badges
+                    .insure-catalog__badges-info
+                      .insure-catalog__badges-hint Подходит для шенгена
+                      img(src="./img/schengen.png" alt="" width="24" height="24")
+                .insure-catalog__rating 5,0
+                ul.insure-catalog__services-list.insure-catalog__services-list--small
+                    li Медицинская помощь
+                    li Экстренная стоматология
+                    li Хронические заболевания
+                    li Медицинская помощь при ожогах
+                    li Поисково-спасательные мероприятия
+                a(href="#").insure-catalog__risk-link +3 рисков
+                a(href="#").insure-catalog__price.insure-catalog__price--base Купить за 2&nbsp;632 &#8381;
+                button(type="button").insure-catalog__button-additional Дополнительно
+            .insure-catalog__block-hidden
+                .insure-catalog__assistance-links
+                    .insure-catalog__assistance
+                        span.insure-catalog__assistance-type Ассистант:
+                        span.insure-catalog__assistance-name Class Assistance
+                        .insure-catalog__assistance-hint-block
+                          span.insure-catalog__assistance-hint-button ?
+                          .insure-catalog__assistance-hint При наступлении страхового случая за границей сервис по урегулированию предоставляет указанная компания.
+                    .insure-catalog__links
+                        a(href="#") Правила страхования
+                        a(href="#") Образец поиска
+                .insure-catalog__services
+                    .insure-catalog__services-title В полис включено:
+                    ul.insure-catalog__services-list.insure-catalog__services-list--full
+                        li
+                            span Медицинская помощь
+                            span 10&nbsp;000&nbsp;€
+                        li
+                            span Экстренная стоматология
+                            span 3&nbsp;000&nbsp;€
+                        li
+                            span Хронические заболевания
+                            span 50&nbsp;000&nbsp;€
+                        li
+                            span Медицинская помощь при ожогах
+                            span 5&nbsp;000&nbsp;€
+                        li
+                            span Поисково-спасательные мероприятия
+                            span 25&nbsp;000&nbsp;€
+                        li
+                            span Медицинская помощь при аллергиях
+                            span 500&nbsp;€
+                        li
+                            span Медицинская помощь при ожогах
+                            span 1 500&nbsp;€
+                        li
+                            span Медикаменты
+                            span 50&nbsp;000&nbsp;€
+                        li
+                            span Медицинское оборудование
+                            span 10&nbsp;000&nbsp;€
+                        li
+                            span Переводчик
+                            span 30&nbsp;000&nbsp;€
+                .insure-catalog__form
+                  .insure-catalog__form-title Дополнительно:
+                  form(action="#" method="get")
+                      .insure-catalog__form-wrapper
+                          fieldset.insure-catalog__fieldset-luggage
+                            div.insure-catalog__legend Страхование багажа:
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage21" name="luggage")
+                                label(for="luggage21" tabindex="0") Не покрывается
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage22" name="luggage")
+                                label(for="luggage22" tabindex="0") 500&nbsp;€ за 191 &#8381;
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage23" name="luggage")
+                                label(for="luggage23" tabindex="0") 1&nbsp;000&nbsp;€ за 383 &#8381;
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage24" name="luggage")
+                                label(for="luggage24" tabindex="0") 1 500&nbsp;€ за 574 &#8381;
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage25" name="luggage")
+                                label(for="luggage25" tabindex="0") 2&nbsp;000&nbsp;€ за 765 &#8381;
+                          .insure-catalog__fieldset-wrapper
+                              fieldset.insure-catalog__fieldset-accident
+                                div.insure-catalog__legend Несчастный случай:
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="accident21" name="accident")
+                                    label(for="accident21" tabindex="0") Не покрывается
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="accident22" name="accident")
+                                    label(for="accident22" tabindex="0") 500&nbsp;€ за 191 &#8381;
+                              fieldset.insure-catalog__fieldset-responsibility
+                                div.insure-catalog__legend Страхование ответственности:
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="responsibility21" name="responsibility")
+                                    label(for="responsibility21" tabindex="0") Не покрывается
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="responsibility22" name="responsibility")
+                                    label(for="responsibility22" tabindex="0") 500&nbsp;€ за 191 &#8381;
+                          .insure-catalog__value
+                              div.insure-catalog__legend Итого:
+                              strong.insure-catalog__price.insure-catalog__price--total 1 684 &#8381;
+                              button(type="submit").insure-catalog__button-buy Купить
+        article.insure-catalog__item
+            .insure-catalog__block-shown
+                .insure-catalog__company
+                    img(src="./img/ingostrach.png" alt="" width="40" height="40")
+                    h2.insure-catalog__title: span Ингосстрах
+                    ul.insure-catalog__main-info
+                        li Медицинское страхование на 40&nbsp;000&nbsp;€
+                        li Страхование багажа 500&nbsp;€
+                        li Гражданская ответственность 10&nbsp;000&nbsp;€
+                        li Несчастный случай 30&nbsp;000&nbsp;€
+                .insure-catalog__risk 10 рисков
+                .insure-catalog__badges
+                    .insure-catalog__badges-info
+                      .insure-catalog__badges-hint Подходит для шенгена
+                      img(src="./img/schengen.png" alt="" width="24" height="24")
+                    .insure-catalog__badges-info
+                      .insure-catalog__badges-hint Сезонная скидка
+                      img(src="./img/discount.png" alt="" width="24" height="24")
+                .insure-catalog__rating 4,2
+                ul.insure-catalog__services-list.insure-catalog__services-list--small
+                    li Медицинская помощь
+                    li Экстренная стоматология
+                    li Хронические заболевания
+                    li Медицинская помощь при ожогах
+                    li Поисково-спасательные мероприятия
+                a(href="#").insure-catalog__risk-link +5 рисков
+                a(href="#").insure-catalog__price.insure-catalog__price--base Купить за 2&nbsp;632 &#8381;
+                button(type="button").insure-catalog__button-additional Дополнительно
+            .insure-catalog__block-hidden
+                .insure-catalog__assistance-links
+                    .insure-catalog__assistance
+                        span.insure-catalog__assistance-type Ассистант:
+                        span.insure-catalog__assistance-name Class Assistance
+                        .insure-catalog__assistance-hint-block
+                          span.insure-catalog__assistance-hint-button ?
+                          .insure-catalog__assistance-hint При наступлении страхового случая за границей сервис по урегулированию предоставляет указанная компания.
+                    .insure-catalog__links
+                        a(href="#") Правила страхования
+                        a(href="#") Образец поиска
+                .insure-catalog__services
+                    .insure-catalog__services-title В полис включено:
+                    ul.insure-catalog__services-list.insure-catalog__services-list--full
+                        li
+                            span Медицинская помощь
+                            span 10&nbsp;000&nbsp;€
+                        li
+                            span Экстренная стоматология
+                            span 3&nbsp;000&nbsp;€
+                        li
+                            span Хронические заболевания
+                            span 50&nbsp;000&nbsp;€
+                        li
+                            span Медицинская помощь при ожогах
+                            span 5&nbsp;000&nbsp;€
+                        li
+                            span Поисково-спасательные мероприятия
+                            span 25&nbsp;000&nbsp;€
+                        li
+                            span Медицинская помощь при аллергиях
+                            span 500&nbsp;€
+                        li
+                            span Медицинская помощь при ожогах
+                            span 1 500&nbsp;€
+                        li
+                            span Медикаменты
+                            span 50&nbsp;000&nbsp;€
+                        li
+                            span Медицинское оборудование
+                            span 10&nbsp;000&nbsp;€
+                        li
+                            span Переводчик
+                            span 30&nbsp;000&nbsp;€
+                .insure-catalog__form
+                  .insure-catalog__form-title Дополнительно:
+                  form(action="#" method="get")
+                      .insure-catalog__form-wrapper
+                          fieldset.insure-catalog__fieldset-luggage
+                            div.insure-catalog__legend Страхование багажа:
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage31" name="luggage")
+                                label(for="luggage31" tabindex="0") Не покрывается
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage32" name="luggage")
+                                label(for="luggage32" tabindex="0") 500&nbsp;€ за 191 &#8381;
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage33" name="luggage")
+                                label(for="luggage33" tabindex="0") 1&nbsp;000&nbsp;€ за 383 &#8381;
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage34" name="luggage")
+                                label(for="luggage34" tabindex="0") 1 500&nbsp;€ за 574 &#8381;
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage35" name="luggage")
+                                label(for="luggage35" tabindex="0") 2&nbsp;000&nbsp;€ за 765 &#8381;
+                          .insure-catalog__fieldset-wrapper
+                              fieldset.insure-catalog__fieldset-accident
+                                div.insure-catalog__legend Несчастный случай:
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="accident31" name="accident")
+                                    label(for="accident31" tabindex="0") Не покрывается
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="accident32" name="accident")
+                                    label(for="accident32" tabindex="0") 500&nbsp;€ за 191 &#8381;
+                              fieldset.insure-catalog__fieldset-responsibility
+                                div.insure-catalog__legend Страхование ответственности:
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="responsibility31" name="responsibility")
+                                    label(for="responsibility31" tabindex="0") Не покрывается
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="responsibility32" name="responsibility")
+                                    label(for="responsibility32" tabindex="0") 500&nbsp;€ за 191 &#8381;
+                          .insure-catalog__value
+                              div.insure-catalog__legend Итого:
+                              strong.insure-catalog__price.insure-catalog__price--total 1 684 &#8381;
+                              button(type="submit").insure-catalog__button-buy Купить
+        .insure-catalog__banner
+            img(src="./img/best-price.png" alt="")
+            .insure-catalog__banner-title Гарантия лучшей цены
+            p.
+              Мы гарантируем самые низкие цены. Не дороже, чем напрямую
+              в страховой компании. Если вы нашли цену ниже, мы компенсируем
+              вам эту разницу.
+        article.insure-catalog__item
+            .insure-catalog__block-shown
+                .insure-catalog__company
+                    img(src="./img/alfa.png" alt="" width="40" height="40")
+                    h2.insure-catalog__title: span АльфаСтрахование
+                    ul.insure-catalog__main-info
+                        li Медицинское страхование на 40&nbsp;000&nbsp;€
+                        li Страхование багажа 500&nbsp;€
+                        li Гражданская ответственность 10&nbsp;000&nbsp;€
+                        li Несчастный случай 30&nbsp;000&nbsp;€
+                .insure-catalog__risk 10 рисков
+                .insure-catalog__badges
+                    .insure-catalog__badges-info
+                      .insure-catalog__badges-hint Подходит для шенгена
+                      img(src="./img/schengen.png" alt="" width="24" height="24")
+                    .insure-catalog__badges-info
+                      .insure-catalog__badges-hint Сезонная скидка
+                      img(src="./img/discount.png" alt="" width="24" height="24")
+                .insure-catalog__rating 4,5
+                ul.insure-catalog__services-list.insure-catalog__services-list--small
+                    li Медицинская помощь
+                    li Экстренная стоматология
+                    li Хронические заболевания
+                    li Медицинская помощь при ожогах
+                    li Поисково-спасательные мероприятия
+                a(href="#").insure-catalog__risk-link +15 рисков
+
+                a(href="#").insure-catalog__price.insure-catalog__price--base Купить за 2&nbsp;632 &#8381;
+                button(type="button").insure-catalog__button-additional Дополнительно
+            .insure-catalog__block-hidden
+                .insure-catalog__assistance-links
+                    .insure-catalog__assistance
+                        span.insure-catalog__assistance-type Ассистант:
+                        span.insure-catalog__assistance-name Class Assistance
+                        .insure-catalog__assistance-hint-block
+                          span.insure-catalog__assistance-hint-button ?
+                          .insure-catalog__assistance-hint При наступлении страхового случая за границей сервис по урегулированию предоставляет указанная компания.
+                    .insure-catalog__links
+                        a(href="#") Правила страхования
+                        a(href="#") Образец поиска
+                .insure-catalog__services
+                    .insure-catalog__services-title В полис включено:
+                    ul.insure-catalog__services-list.insure-catalog__services-list--full
+                        li
+                            span Медицинская помощь
+                            span 10&nbsp;000&nbsp;€
+                        li
+                            span Экстренная стоматология
+                            span 3&nbsp;000&nbsp;€
+                        li
+                            span Хронические заболевания
+                            span 50&nbsp;000&nbsp;€
+                        li
+                            span Медицинская помощь при ожогах
+                            span 5&nbsp;000&nbsp;€
+                        li
+                            span Поисково-спасательные мероприятия
+                            span 25&nbsp;000&nbsp;€
+                        li
+                            span Медицинская помощь при аллергиях
+                            span 500&nbsp;€
+                        li
+                            span Медицинская помощь при ожогах
+                            span 1 500&nbsp;€
+                        li
+                            span Медикаменты
+                            span 50&nbsp;000&nbsp;€
+                        li
+                            span Медицинское оборудование
+                            span 10&nbsp;000&nbsp;€
+                        li
+                            span Переводчик
+                            span 30&nbsp;000&nbsp;€
+                .insure-catalog__form
+                  .insure-catalog__form-title Дополнительно:
+                  form(action="#" method="get")
+                      .insure-catalog__form-wrapper
+                          fieldset.insure-catalog__fieldset-luggage
+                            div.insure-catalog__legend Страхование багажа:
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage41" name="luggage")
+                                label(for="luggage41" tabindex="0") Не покрывается
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage42" name="luggage")
+                                label(for="luggage42" tabindex="0") 500&nbsp;€ за 191 &#8381;
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage43" name="luggage")
+                                label(for="luggage43" tabindex="0") 1&nbsp;000&nbsp;€ за 383 &#8381;
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage44" name="luggage")
+                                label(for="luggage44" tabindex="0") 1 500&nbsp;€ за 574 &#8381;
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage45" name="luggage")
+                                label(for="luggage45" tabindex="0") 2&nbsp;000&nbsp;€ за 765 &#8381;
+                          .insure-catalog__fieldset-wrapper
+                              fieldset.insure-catalog__fieldset-accident
+                                div.insure-catalog__legend Несчастный случай:
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="accident41" name="accident")
+                                    label(for="accident41" tabindex="0") Не покрывается
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="accident42" name="accident")
+                                    label(for="accident42" tabindex="0") 500&nbsp;€ за 191 &#8381;
+                              fieldset.insure-catalog__fieldset-responsibility
+                                div.insure-catalog__legend Страхование ответственности:
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="responsibility41" name="responsibility")
+                                    label(for="responsibility41" tabindex="0") Не покрывается
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="responsibility42" name="responsibility")
+                                    label(for="responsibility42" tabindex="0") 500&nbsp;€ за 191 &#8381;
+                          .insure-catalog__value
+                              div.insure-catalog__legend Итого:
+                              strong.insure-catalog__price.insure-catalog__price--total 1 684 &#8381;
+                              button(type="submit").insure-catalog__button-buy Купить
+        article.insure-catalog__item
+            .insure-catalog__block-shown
+                .insure-catalog__company
+                    img(src="./img/tinkoff.png" alt="" width="40" height="40")
+                    h2.insure-catalog__title: span Тинькофф
+                    ul.insure-catalog__main-info
+                        li Медицинское страхование на 40&nbsp;000&nbsp;€
+                        li Страхование багажа 500&nbsp;€
+                        li Гражданская ответственность 10&nbsp;000&nbsp;€
+                        li Несчастный случай 30&nbsp;000&nbsp;€
+                .insure-catalog__risk 8 рисков
+                .insure-catalog__badges
+                    .insure-catalog__badges-info
+                      .insure-catalog__badges-hint Подходит для шенгена
+                      img(src="./img/schengen.png" alt="" width="24" height="24")
+                .insure-catalog__rating 5,0
+                ul.insure-catalog__services-list.insure-catalog__services-list--small
+                    li Медицинская помощь
+                    li Экстренная стоматология
+                    li Хронические заболевания
+                    li Медицинская помощь при ожогах
+                    li Поисково-спасательные мероприятия
+                a(href="#").insure-catalog__risk-link +3 рисков
+                a(href="#").insure-catalog__price.insure-catalog__price--base Купить за 2&nbsp;632 &#8381;
+                button(type="button").insure-catalog__button-additional Дополнительно
+            .insure-catalog__block-hidden
+                .insure-catalog__assistance-links
+                    .insure-catalog__assistance
+                        span.insure-catalog__assistance-type Ассистант:
+                        span.insure-catalog__assistance-name Class Assistance
+                        .insure-catalog__assistance-hint-block
+                          span.insure-catalog__assistance-hint-button ?
+                          .insure-catalog__assistance-hint При наступлении страхового случая за границей сервис по урегулированию предоставляет указанная компания.
+                    .insure-catalog__links
+                        a(href="#") Правила страхования
+                        a(href="#") Образец поиска
+                .insure-catalog__services
+                    .insure-catalog__services-title В полис включено:
+                    ul.insure-catalog__services-list.insure-catalog__services-list--full
+                        li
+                            span Медицинская помощь
+                            span 10&nbsp;000&nbsp;€
+                        li
+                            span Экстренная стоматология
+                            span 3&nbsp;000&nbsp;€
+                        li
+                            span Хронические заболевания
+                            span 50&nbsp;000&nbsp;€
+                        li
+                            span Медицинская помощь при ожогах
+                            span 5&nbsp;000&nbsp;€
+                        li
+                            span Поисково-спасательные мероприятия
+                            span 25&nbsp;000&nbsp;€
+                        li
+                            span Медицинская помощь при аллергиях
+                            span 500&nbsp;€
+                        li
+                            span Медицинская помощь при ожогах
+                            span 1 500&nbsp;€
+                        li
+                            span Медикаменты
+                            span 50&nbsp;000&nbsp;€
+                        li
+                            span Медицинское оборудование
+                            span 10&nbsp;000&nbsp;€
+                        li
+                            span Переводчик
+                            span 30&nbsp;000&nbsp;€
+                .insure-catalog__form
+                  .insure-catalog__form-title Дополнительно:
+                  form(action="#" method="get")
+                      .insure-catalog__form-wrapper
+                          fieldset.insure-catalog__fieldset-luggage
+                            div.insure-catalog__legend Страхование багажа:
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage51" name="luggage")
+                                label(for="luggage51" tabindex="0") Не покрывается
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage52" name="luggage")
+                                label(for="luggage52" tabindex="0") 500&nbsp;€ за 191 &#8381;
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage53" name="luggage")
+                                label(for="luggage53" tabindex="0") 1&nbsp;000&nbsp;€ за 383 &#8381;
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage54" name="luggage")
+                                label(for="luggage54" tabindex="0") 1 500&nbsp;€ за 574 &#8381;
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage55" name="luggage")
+                                label(for="luggage55" tabindex="0") 2&nbsp;000&nbsp;€ за 765 &#8381;
+                          .insure-catalog__fieldset-wrapper
+                              fieldset.insure-catalog__fieldset-accident
+                                div.insure-catalog__legend Несчастный случай:
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="accident51" name="accident")
+                                    label(for="accident51" tabindex="0") Не покрывается
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="accident52" name="accident")
+                                    label(for="accident52" tabindex="0") 500&nbsp;€ за 191 &#8381;
+                              fieldset.insure-catalog__fieldset-responsibility
+                                div.insure-catalog__legend Страхование ответственности:
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="responsibility51" name="responsibility")
+                                    label(for="responsibility51" tabindex="0") Не покрывается
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="responsibility52" name="responsibility")
+                                    label(for="responsibility52" tabindex="0") 500&nbsp;€ за 191 &#8381;
+                          .insure-catalog__value
+                              div.insure-catalog__legend Итого:
+                              strong.insure-catalog__price.insure-catalog__price--total 1 684 &#8381;
+                              button(type="submit").insure-catalog__button-buy Купить
+        article.insure-catalog__item
+            .insure-catalog__block-shown
+                .insure-catalog__company
+                    img(src="./img/ingostrach.png" alt="" width="40" height="40")
+                    h2.insure-catalog__title: span Ингосстрах
+                    ul.insure-catalog__main-info
+                        li Медицинское страхование на 40&nbsp;000&nbsp;€
+                        li Страхование багажа 500&nbsp;€
+                        li Гражданская ответственность 10&nbsp;000&nbsp;€
+                        li Несчастный случай 30&nbsp;000&nbsp;€
+                .insure-catalog__risk 10 рисков
+                .insure-catalog__badges
+                    .insure-catalog__badges-info
+                      .insure-catalog__badges-hint Подходит для шенгена
+                      img(src="./img/schengen.png" alt="" width="24" height="24")
+                    .insure-catalog__badges-info
+                      .insure-catalog__badges-hint Сезонная скидка
+                      img(src="./img/discount.png" alt="" width="24" height="24")
+                .insure-catalog__rating 4,2
+                ul.insure-catalog__services-list.insure-catalog__services-list--small
+                    li Медицинская помощь
+                    li Экстренная стоматология
+                    li Хронические заболевания
+                    li Медицинская помощь при ожогах
+                    li Поисково-спасательные мероприятия
+                a(href="#").insure-catalog__risk-link +5 рисков
+                a(href="#").insure-catalog__price.insure-catalog__price--base Купить за 2&nbsp;632 &#8381;
+                button(type="button").insure-catalog__button-additional Дополнительно
+            .insure-catalog__block-hidden
+                .insure-catalog__assistance-links
+                    .insure-catalog__assistance
+                        span.insure-catalog__assistance-type Ассистант:
+                        span.insure-catalog__assistance-name Class Assistance
+                        .insure-catalog__assistance-hint-block
+                          span.insure-catalog__assistance-hint-button ?
+                          .insure-catalog__assistance-hint При наступлении страхового случая за границей сервис по урегулированию предоставляет указанная компания.
+                    .insure-catalog__links
+                        a(href="#") Правила страхования
+                        a(href="#") Образец поиска
+                .insure-catalog__services
+                    .insure-catalog__services-title В полис включено:
+                    ul.insure-catalog__services-list.insure-catalog__services-list--full
+                        li
+                            span Медицинская помощь
+                            span 10&nbsp;000&nbsp;€
+                        li
+                            span Экстренная стоматология
+                            span 3&nbsp;000&nbsp;€
+                        li
+                            span Хронические заболевания
+                            span 50&nbsp;000&nbsp;€
+                        li
+                            span Медицинская помощь при ожогах
+                            span 5&nbsp;000&nbsp;€
+                        li
+                            span Поисково-спасательные мероприятия
+                            span 25&nbsp;000&nbsp;€
+                        li
+                            span Медицинская помощь при аллергиях
+                            span 500&nbsp;€
+                        li
+                            span Медицинская помощь при ожогах
+                            span 1 500&nbsp;€
+                        li
+                            span Медикаменты
+                            span 50&nbsp;000&nbsp;€
+                        li
+                            span Медицинское оборудование
+                            span 10&nbsp;000&nbsp;€
+                        li
+                            span Переводчик
+                            span 30&nbsp;000&nbsp;€
+                .insure-catalog__form
+                  .insure-catalog__form-title Дополнительно:
+                  form(action="#" method="get")
+                      .insure-catalog__form-wrapper
+                          fieldset.insure-catalog__fieldset-luggage
+                            div.insure-catalog__legend Страхование багажа:
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage61" name="luggage")
+                                label(for="luggage61" tabindex="0") Не покрывается
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage62" name="luggage")
+                                label(for="luggage62" tabindex="0") 500&nbsp;€ за 191 &#8381;
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage63" name="luggage")
+                                label(for="luggage63" tabindex="0") 1&nbsp;000&nbsp;€ за 383 &#8381;
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage64" name="luggage")
+                                label(for="luggage64" tabindex="0") 1 500&nbsp;€ за 574 &#8381;
+                            .insure-catalog__radio-block
+                                input(type="radio" id="luggage65" name="luggage")
+                                label(for="luggage65" tabindex="0") 2&nbsp;000&nbsp;€ за 765 &#8381;
+                          .insure-catalog__fieldset-wrapper
+                              fieldset.insure-catalog__fieldset-accident
+                                div.insure-catalog__legend Несчастный случай:
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="accident61" name="accident")
+                                    label(for="accident61" tabindex="0") Не покрывается
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="accident62" name="accident")
+                                    label(for="accident62" tabindex="0") 500&nbsp;€ за 191 &#8381;
+                              fieldset.insure-catalog__fieldset-responsibility
+                                div.insure-catalog__legend Страхование ответственности:
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="responsibility61" name="responsibility")
+                                    label(for="responsibility61" tabindex="0") Не покрывается
+                                .insure-catalog__radio-block
+                                    input(type="radio" id="responsibility62" name="responsibility")
+                                    label(for="responsibility62" tabindex="0") 500&nbsp;€ за 191 &#8381;
+                          .insure-catalog__value
+                              div.insure-catalog__legend Итого:
+                              strong.insure-catalog__price.insure-catalog__price--total 1 684 &#8381;
+                              button(type="submit").insure-catalog__button-buy Купить
+      a(href="#").insure-catalog__button-more Показать ещё

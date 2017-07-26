@@ -1,0 +1,11 @@
+extends template
+
+block content
+    // Header
+    include include/header
+    include subheader/subheader-catalog
+    include catalog/insure-selection
+    .insure-content
+      .insure-content__wrapper
+        include catalog/catalog-content
+        include aside/benefits-statistics

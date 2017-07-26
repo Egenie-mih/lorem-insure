@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prosto.Insure</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i%7CRoboto:400,700&amp;amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/tokenize2.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <!-- Header-->
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="main-navigation">
+          <div class="main-navigation__burger">
+            <button class="main-navigation__burger-button">Открыть меню</button><span>Купить страховку</span>
+          </div>
+        </div><a class="header__logo" href="index.html"><img src="./img/prosto-logo.png" alt="Prosto Insure" width="199" height="22"></a>
+        <div class="page-header__contacts"><a class="page-header__contacts-tel" href="#">+7 499 322-14-22</a><a class="page-header__contacts-callback" href="#">Перезвоните мне
+            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="7" viewBox="0 0 5 7">
+              <path class="cls-1" d="M0 4h5l-2.5 3ZM2 0h1v5h-1v-5Z"></path>
+            </svg></a></div>
+      </div>
+    </header>
+    <!-- Main container-->
+    <!-- .container-->
+    <div class="main-content">
+      <div class="main-content__wrapper">
+        <div class="subheader subheader--main">
+          <h1 class="subheader__title"><span>Дешёвые онлайн-страховки для туристов</span></h1>
+          <p class="subheader__description">
+            От 40 рублей в день, 9 компаний на выбор, подходит для визы
+            и спортивных соревнований, оплата картой, полис PDF
+            на email — всего за 2 минуты.
+          </p>
+        </div>
+        <div class="main-selection">
+          <form action="catalog.html" method="get">
+            <div class="main-selection__wrapper">
+              <div class="main-selection__select-block main-selection__select-block--place">
+                <label for="place">Куда вы собираетесь?</label>
+                <select class="main-selection__select" multiple id="place">
+                  <option value="Франция">Франция</option>
+                  <option value="Россия">Россия</option>
+                  <option value="Норвегия">Норвегия</option>
+                  <option value="Италия">Италия</option>
+                  <option value="Испания">Испания</option>
+                  <option value="Весь мир" selected>Весь мир</option>
+                  <option value="Американское Самоа" selected>Американское Самоа</option>
+                </select>
+              </div>
+              <div class="main-selection__select-block main-selection__select-block--calendar">
+                <label for="calendar">Дата поездки:</label>
+                <input class="main-selection__select-input" type="text" id="calendar" placeholder="Выберите дату поездки" value="25.06.2017 – 02.07.2017">
+              </div>
+              <div class="main-selection__select-block main-selection__select-block--person">
+                <label for="person">Количество и возраст:</label>
+                <input class="main-selection__select-input" type="text" id="person" placeholder="Выберите количество человек" value="3 туриста">
+                <div class="main-selection__person"><span class="main-selection__person-caption">Возраст туристов:</span>
+                  <div class="main-selection__person-item">
+                    <input type="text" id="person1" placeholder="+ турист" value="30 лет">
+                    <button>Remove</button>
+                  </div>
+                  <div class="main-selection__person-item">
+                    <input type="text" id="person2" placeholder="+ турист" value="38 лет">
+                    <button>Remove</button>
+                  </div>
+                  <div class="main-selection__person-item main-selection__person-item--default">
+                    <input type="text" id="person3" placeholder="+ турист">
+                  </div>
+                </div>
+              </div>
+              <div class="main-selection__select-block main-selection__select-block--activities">
+                <label for="activities">Тип отдыха:</label>
+                <input class="main-selection__select-input" type="text" id="activities" placeholder="Выберите тип отдыха" value="Тренировки или соревнования">
+              </div>
+              <div class="main-selection__checkbox-block">
+                <input type="checkbox" id="abroad" name="abroad">
+                <label for="abroad" tabindex="0">Я уже за границей</label>
+              </div>
+              <div class="main-selection__checkbox-block">
+                <input type="checkbox" id="pregnancy" name="pregnancy">
+                <label for="pregnancy" tabindex="0">Я беременна</label>
+              </div>
+            </div>
+            <button class="main-selection__button" type="submit">Узнать стоимость</button>
+          </form>
+        </div>
+        <div class="company-list"><a href="#"><img src="./img/1.png" alt="Страховые компании"><span>Альфа-страхование</span></a><a href="#"><img src="./img/2.png" alt="Страховые компании"><span>Альфа-страхование</span></a><a href="#"><img src="./img/3.png" alt="Страховые компании"><span>Альфа-страхование</span></a><a href="#"><img src="./img/4.png" alt="Страховые компании"><span>Альфа-страхование</span></a><a href="#"><img src="./img/5.png" alt="Страховые компании"><span>Альфа-страхование</span></a><a href="#"><img src="./img/6.png" alt="Страховые компании"><span>Альфа-страхование</span></a><a href="#"><img src="./img/7.png" alt="Страховые компании"><span>Альфа-страхование</span></a><a href="#"><img src="./img/2.png" alt="Страховые компании"><span>Альфа-страхование</span></a><a href="#"><img src="./img/3.png" alt="Страховые компании"><span>Альфа-страхование</span></a></div>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/tokenize2.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

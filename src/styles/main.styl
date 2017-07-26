@@ -1,0 +1,27 @@
+// MEDIA
+mobile-widths = '(max-width: 719px)'
+tablet-small-widths = '(min-width: 720px)'
+tablet-large-widths = '(min-width: 960px)'
+desktop-widths = '(min-width: 1600px)'
+
+// COLORS
+black = #000000
+green = #1abc9c
+gray = #888888
+violet = #73429c
+
+@import 'mixins/*'
+@import 'include/header.styl'
+@import 'index/*'
+@import 'subheader/*'
+@import 'catalog/catalog-tokenizer.styl'
+@import 'catalog/insure-selection.styl'
+@import 'catalog/insure-catalog.styl'
+@import 'catalog/insure-catalog__item--small.styl'
+@import 'aside/*'
+
+
+.content-hidden
+  display none
+.content-show
+  display flex

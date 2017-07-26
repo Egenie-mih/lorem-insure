@@ -1,0 +1,67 @@
+.main-selection
+    form(action="catalog.html" method="get")
+        .main-selection__wrapper
+            .main-selection__select-block.main-selection__select-block--place
+              label(for="place") Куда вы собираетесь?
+              select(multiple id="place").main-selection__select
+                option(value="Франция") Франция
+                option(value="Россия") Россия
+                option(value="Норвегия") Норвегия
+                option(value="Италия") Италия
+                option(value="Испания") Испания
+                option(value="Весь мир" selected) Весь мир
+                option(value="Американское Самоа" selected) Американское Самоа
+            .main-selection__select-block.main-selection__select-block--calendar
+                label(for="calendar") Дата поездки:
+                input(type="text" id="calendar" placeholder="Выберите дату поездки" value="25.06.2017 – 02.07.2017").main-selection__select-input
+            .main-selection__select-block.main-selection__select-block--person
+                label(for="person") Количество и возраст:
+                input(type="text" id="person" placeholder="Выберите количество человек" value="3 туриста").main-selection__select-input
+                .main-selection__person
+                    span.main-selection__person-caption Возраст туристов:
+                    .main-selection__person-item
+                        input(type="text" id="person1" placeholder="+ турист" value="30 лет")
+                        button Remove
+                    .main-selection__person-item
+                        input(type="text" id="person2" placeholder="+ турист" value="38 лет")
+                        button Remove
+                    .main-selection__person-item.main-selection__person-item--default
+                      input(type="text" id="person3" placeholder="+ турист")
+            .main-selection__select-block.main-selection__select-block--activities
+                label(for="activities") Тип отдыха:
+                input(type="text" id="activities" placeholder="Выберите тип отдыха" value="Тренировки или соревнования").main-selection__select-input
+            .main-selection__checkbox-block
+                input(type="checkbox" id="abroad" name="abroad")
+                label(for="abroad" tabindex="0") Я уже за границей
+            .main-selection__checkbox-block
+                input(type="checkbox" id="pregnancy" name="pregnancy")
+                label(for="pregnancy" tabindex="0") Я беременна
+        button(type="submit").main-selection__button Узнать стоимость
+.company-list
+    a(href="#")
+        img(src="./img/1.png" alt="Страховые компании")
+        span Альфа-страхование
+    a(href="#")
+        img(src="./img/2.png" alt="Страховые компании")
+        span Альфа-страхование
+    a(href="#")
+        img(src="./img/3.png" alt="Страховые компании")
+        span Альфа-страхование
+    a(href="#")
+        img(src="./img/4.png" alt="Страховые компании")
+        span Альфа-страхование
+    a(href="#")
+        img(src="./img/5.png" alt="Страховые компании")
+        span Альфа-страхование
+    a(href="#")
+        img(src="./img/6.png" alt="Страховые компании")
+        span Альфа-страхование
+    a(href="#")
+        img(src="./img/7.png" alt="Страховые компании")
+        span Альфа-страхование
+    a(href="#")
+        img(src="./img/2.png" alt="Страховые компании")
+        span Альфа-страхование
+    a(href="#")
+        img(src="./img/3.png" alt="Страховые компании")
+        span Альфа-страхование

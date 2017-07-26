@@ -1,0 +1,283 @@
+.main-content
+  background-color #05a0b4
+  background-image url('../img/bg-main.jpg')
+  background-size cover
+  padding 20px 0
+  &__wrapper
+    padding 0 17px
+    box-sizing border-box
+
+
+.main-selection
+  margin-bottom 60px
+  &__wrapper
+    margin 0 auto
+    display flex
+    flex-direction column
+    flex-wrap wrap
+    text-align left
+    align-items flex-start
+  &__select-input
+    background-repeat no-repeat
+    background-position 15px center
+    width 100%
+    padding 14px 20px
+    border-radius 10px
+    box-sizing border-box
+    border 0
+    background-color #ffffff
+    font-size 14px
+  &__select-block
+    width 100%
+    margin-bottom 24px
+    position relative
+    &::before
+      content ''
+      position absolute
+      z-index 2
+      right 24px
+      bottom 20px
+      width 0
+      height 0
+      border-left 5px solid transparent
+      border-right 5px solid transparent
+      border-top 5px solid rgba(0,0,0,.32)
+    & label
+      display block
+      color rgba(255,255,255, 0.6)
+      font-size 12px
+      margin-bottom 8px
+    & input
+      color #000000
+      &:hover
+        color violet
+      &::-webkit-input-placeholder
+          color gray
+      &:-ms-input-placeholder
+          color gray
+      &::-ms-input-placeholder
+          color gray
+      &:-moz-placeholder
+          opacity: 1
+          color gray
+      &::-moz-placeholder
+          opacity: 1
+          color gray
+      &::placeholder
+          opacity: 1
+          color gray
+    &--place
+      margin-bottom 16px
+      .main-selection__select-input
+        padding-left 45px
+        padding-right 45px
+        background-image url('../img/place-24.png')
+
+    &--calendar
+      .main-selection__select-input
+        padding-left 45px
+        padding-right 45px
+        background-image url('../img/calendar-24.png')
+
+    &--person
+      position relative
+      .main-selection__select-input
+        padding-left 45px
+        padding-right 45px
+        background-image url('../img/person-24.png')
+
+    &--activities
+      .main-selection__select-input
+        padding-left 45px
+        padding-right 45px
+        background-image url('../img/activities-24.png')
+
+  &__person
+    position absolute
+    z-index 20
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    justify-content: space-between;
+    width 228px
+    box-sizing border-box
+    left 0px
+    margin-top 9px
+    background-color #ffffff
+    padding 11px 16px 16px
+    border-radius 10px
+    display none
+    &::before
+      content ""
+      position absolute
+      width 10px
+      height 10px
+      top -4px
+      left 0
+      right 0
+      margin 0 auto
+      background-color #ffffff
+      transform rotate(45deg)
+    &-item
+      border-radius 10px
+      display flex
+      align-items center
+      justify-content space-between
+      width 93px
+      box-sizing border-box
+      padding 9px 12px
+      border 1px solid rgba(0,0,0,.32)
+      cursor pointer
+      &:nth-of-type(n+3)
+        margin-top 10px
+      &--default
+        border-style dashed
+      & input
+        width 55px
+        border 0
+        color #000000
+        font-size 14px
+      & button
+        font-size 0
+        width 10px
+        height 10px
+        background-color transparent
+        border 0
+        position relative
+        &:before, &:after
+          position: absolute
+          top 0
+          left 7px
+          content ''
+          height 10px
+          width 1px
+          background-color #000
+          opacity .24
+        &:before
+          transform rotate(45deg)
+        &:after
+          transform rotate(-45deg)
+        &:hover:before,
+        &:hover:after
+          opacity 1
+    &-caption
+      color gray
+      font-size 12px
+      width 100%
+      margin-bottom 9px
+
+  &__checkbox-block
+    padding-left 25px
+    margin-right 13px
+    margin-bottom 10px
+    & input[type="checkbox"]
+      display: none;
+    & label
+      font-size 14px
+      color #ffffff
+      position relative
+    & input[type="checkbox"]+label::before
+        content ''
+        display block
+        width 16px
+        height 16px
+        position absolute
+        left -25px
+        top 1px
+        background-color #ffffff
+        border-radius 4px
+    & input[type="checkbox"]:checked+label::before
+      background-color green
+      background-image url('../img/rectangle.png')
+      background-repeat no-repeat
+      background-position center
+
+  &__button
+    display block
+    width 242px
+    box-sizing border-box
+    margin 0 auto
+    text-align center
+    margin-top 24px
+    text-transform uppercase
+    color #ffffff
+    font-size 14px
+    background-color green
+    border 0
+    border-radius 30px
+    padding 20px
+
+.company-list
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+  font-size 0
+  line-height 0
+  text-decoration none
+  padding 50px 10px
+  border-top 1px solid rgba(255,255,255,.08)
+  & a
+    display flex
+    justify-content center
+    align-items center
+    opacity .6
+    &:hover
+      opacity 1
+    & img
+      min-width 15px
+      max-width 30px
+      height auto
+
+
+@media tablet-small-widths
+  .main-selection
+    &__wrapper
+      width 687px
+      flex-direction row
+    &__select-block
+      &--place
+        width 100%
+        box-sizing border-box
+        .main-selection__select-input
+          border-radius 10px
+
+      &--calendar
+        margin-right 1px
+        width 246px
+        .main-selection__select-input
+          border-radius 10px 0 0 10px
+
+      &--person
+        margin-right 1px
+        width 158px
+        .main-selection__select-input
+          border-radius 0px
+
+      &--activities
+        width 280px
+        .main-selection__select-input
+          border-radius 0 10px 10px 0
+    &__person
+      left -27px
+@media tablet-large-widths
+  .main-content
+    &__wrapper
+      width 862px
+      margin 0 auto
+      padding 0 24px
+
+  .main-selection
+    &__wrapper
+      width 814px
+    &__select-block
+
+      &--calendar
+        width 291px
+
+      &--person
+        width 178px
+
+      &--activities
+        width 341px
+  &__select-input
+    font-size 16px

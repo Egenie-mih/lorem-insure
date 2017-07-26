@@ -1,0 +1,2348 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  min-width: 320px;
+}
+@media (min-width: 1600px) {
+  body {
+    min-width: 1600px;
+  }
+}
+body,
+input,
+button,
+textarea {
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+em,
+i {
+  font-style: italic;
+}
+b,
+strong {
+  font-weight: bold;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+input:focus::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+input:focus:-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.content-hidden {
+  display: none;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+:focus {
+  outline: 0;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+figure {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+.page-header {
+  background-color: #fff;
+  padding: 20px 0 21px;
+}
+.page-header__wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 32px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-header__logo {
+  width: 33.3%;
+  display: block;
+  text-align: center;
+}
+.page-header__logo img {
+  width: 199px;
+  height: auto;
+}
+.page-header__contacts {
+  display: none;
+}
+.main-navigation__burger span {
+  display: none;
+}
+.main-navigation__burger-button {
+  position: relative;
+  font-size: 0;
+  margin-right: 24px;
+  background-color: transparent;
+  border: 0;
+  width: 20px;
+  height: 16px;
+}
+.main-navigation__burger-button::before {
+  position: absolute;
+  top: -4px;
+  left: 2px;
+  width: 20px;
+  height: 2px;
+  content: '';
+  transform: rotate(0);
+  background-color: #000;
+  box-shadow: 0 6px 0 0 #000, 0 12px 0 0 #000;
+}
+.main-navigation__burger-button:hover::before {
+  background-color: #73429c;
+  box-shadow: 0 6px 0 0 #73429c, 0 12px 0 0 #73429c;
+}
+@media (min-width: 720px) {
+  .main-navigation {
+    width: 33.3%;
+  }
+  .main-navigation__burger {
+    display: flex;
+    align-items: center;
+  }
+  .main-navigation span {
+    display: block;
+    font-size: 14px;
+  }
+  .main-navigation__burger-button::before {
+    top: 0px;
+  }
+  .page-header__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 33.3%;
+    text-align: right;
+  }
+  .page-header__contacts-tel {
+    display: block;
+    text-decoration: none;
+    font-size: 19px;
+    line-height: 20px;
+    margin-bottom: 4px;
+    color: #000;
+  }
+  .page-header__contacts-callback {
+    display: inline-block;
+    width: auto;
+    color: #888;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 14px;
+    border-bottom: 1px dashed #737373;
+    position: relative;
+  }
+  .page-header__contacts-callback:hover {
+    color: #73429c;
+    border-color: #73429c;
+  }
+  .page-header__contacts-callback:hover svg {
+    fill: #73429c;
+  }
+  .page-header__contacts-callback svg {
+    position: absolute;
+    left: -10px;
+    top: 0.4em;
+    fill: #888;
+    transform: rotate(-90deg);
+    height: 8px;
+    width: auto;
+  }
+}
+.main-content {
+  background-color: #05a0b4;
+  background-image: url("../img/bg-main.jpg");
+  background-size: cover;
+  padding: 20px 0;
+}
+.main-content__wrapper {
+  padding: 0 17px;
+  box-sizing: border-box;
+}
+.main-selection {
+  margin-bottom: 60px;
+}
+.main-selection__wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: left;
+  align-items: flex-start;
+}
+.main-selection__select-input {
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 0;
+  background-color: #fff;
+  font-size: 14px;
+}
+.main-selection__select-block {
+  width: 100%;
+  margin-bottom: 24px;
+  position: relative;
+}
+.main-selection__select-block::before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  right: 24px;
+  bottom: 20px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(0,0,0,0.32);
+}
+.main-selection__select-block label {
+  display: block;
+  color: rgba(255,255,255,0.6);
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.main-selection__select-block input {
+  color: #000;
+}
+.main-selection__select-block input:hover {
+  color: #73429c;
+}
+.main-selection__select-block input::-webkit-input-placeholder {
+  color: #888;
+}
+.main-selection__select-block input:-ms-input-placeholder {
+  color: #888;
+}
+.main-selection__select-block input::-ms-input-placeholder {
+  color: #888;
+}
+.main-selection__select-block input:-moz-placeholder {
+  opacity: 1;
+  color: #888;
+}
+.main-selection__select-block input::-moz-placeholder {
+  opacity: 1;
+  color: #888;
+}
+.main-selection__select-block input::placeholder {
+  opacity: 1;
+  color: #888;
+}
+.main-selection__select-block--place {
+  margin-bottom: 16px;
+}
+.main-selection__select-block--place .main-selection__select-input {
+  padding-left: 45px;
+  padding-right: 45px;
+  background-image: url("../img/place-24.png");
+}
+.main-selection__select-block--calendar .main-selection__select-input {
+  padding-left: 45px;
+  padding-right: 45px;
+  background-image: url("../img/calendar-24.png");
+}
+.main-selection__select-block--person {
+  position: relative;
+}
+.main-selection__select-block--person .main-selection__select-input {
+  padding-left: 45px;
+  padding-right: 45px;
+  background-image: url("../img/person-24.png");
+}
+.main-selection__select-block--activities .main-selection__select-input {
+  padding-left: 45px;
+  padding-right: 45px;
+  background-image: url("../img/activities-24.png");
+}
+.main-selection__person {
+  position: absolute;
+  z-index: 20;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 228px;
+  box-sizing: border-box;
+  left: 0px;
+  margin-top: 9px;
+  background-color: #fff;
+  padding: 11px 16px 16px;
+  border-radius: 10px;
+  display: none;
+}
+.main-selection__person::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -4px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+.main-selection__person-item {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 93px;
+  box-sizing: border-box;
+  padding: 9px 12px;
+  border: 1px solid rgba(0,0,0,0.32);
+  cursor: pointer;
+}
+.main-selection__person-item:nth-of-type(n+3) {
+  margin-top: 10px;
+}
+.main-selection__person-item--default {
+  border-style: dashed;
+}
+.main-selection__person-item input {
+  width: 55px;
+  border: 0;
+  color: #000;
+  font-size: 14px;
+}
+.main-selection__person-item button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 0;
+  position: relative;
+}
+.main-selection__person-item button:before,
+.main-selection__person-item button:after {
+  position: absolute;
+  top: 0;
+  left: 7px;
+  content: '';
+  height: 10px;
+  width: 1px;
+  background-color: #000;
+  opacity: 0.24;
+}
+.main-selection__person-item button:before {
+  transform: rotate(45deg);
+}
+.main-selection__person-item button:after {
+  transform: rotate(-45deg);
+}
+.main-selection__person-item button:hover:before,
+.main-selection__person-item button:hover:after {
+  opacity: 1;
+}
+.main-selection__person-caption {
+  color: #888;
+  font-size: 12px;
+  width: 100%;
+  margin-bottom: 9px;
+}
+.main-selection__checkbox-block {
+  padding-left: 25px;
+  margin-right: 13px;
+  margin-bottom: 10px;
+}
+.main-selection__checkbox-block input[type="checkbox"] {
+  display: none;
+}
+.main-selection__checkbox-block label {
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+}
+.main-selection__checkbox-block input[type="checkbox"]+label::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: -25px;
+  top: 1px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.main-selection__checkbox-block input[type="checkbox"]:checked+label::before {
+  background-color: #1abc9c;
+  background-image: url("../img/rectangle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-selection__button {
+  display: block;
+  width: 242px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  background-color: #1abc9c;
+  border: 0;
+  border-radius: 30px;
+  padding: 20px;
+}
+.company-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0;
+  line-height: 0;
+  text-decoration: none;
+  padding: 50px 10px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.company-list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.6;
+}
+.company-list a:hover {
+  opacity: 1;
+}
+.company-list a img {
+  min-width: 15px;
+  max-width: 30px;
+  height: auto;
+}
+@media (min-width: 720px) {
+  .main-selection__wrapper {
+    width: 687px;
+    flex-direction: row;
+  }
+  .main-selection__select-block--place {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .main-selection__select-block--place .main-selection__select-input {
+    border-radius: 10px;
+  }
+  .main-selection__select-block--calendar {
+    margin-right: 1px;
+    width: 246px;
+  }
+  .main-selection__select-block--calendar .main-selection__select-input {
+    border-radius: 10px 0 0 10px;
+  }
+  .main-selection__select-block--person {
+    margin-right: 1px;
+    width: 158px;
+  }
+  .main-selection__select-block--person .main-selection__select-input {
+    border-radius: 0px;
+  }
+  .main-selection__select-block--activities {
+    width: 280px;
+  }
+  .main-selection__select-block--activities .main-selection__select-input {
+    border-radius: 0 10px 10px 0;
+  }
+  .main-selection__person {
+    left: -27px;
+  }
+}
+@media (min-width: 960px) {
+  .main-content__wrapper {
+    width: 862px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .main-selection__wrapper {
+    width: 814px;
+  }
+  .main-selection__select-block--calendar {
+    width: 291px;
+  }
+  .main-selection__select-block--person {
+    width: 178px;
+  }
+  .main-selection__select-block--activities {
+    width: 341px;
+  }
+  __select-input {
+    font-size: 16px;
+  }
+}
+.subheader {
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+}
+.subheader__title {
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 17px;
+}
+.subheader__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'PT Serif', 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 400;
+  max-width: 665px;
+  margin: 0 auto;
+}
+.subheader--main {
+  padding: 43px 0;
+}
+.subheader--insure-selection {
+  padding: 45px 28px 65px;
+  background-image: url("../img/bg-tourism.jpg");
+  background-position-y: bottom;
+  background-position-x: -400px;
+  background-repeat: no-repeat;
+}
+.subheader__wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+@media (min-width: 400px) {
+  .subheader--insure-selection {
+    background-position-x: center;
+  }
+}
+@media (min-width: 720px) {
+  .subheader--insure-selection {
+    padding: 100px 0 110px;
+  }
+}
+@media (min-width: 960px) {
+  .subheader--insure-selection {
+    background-position-x: 0;
+    background-image: url("../img/bg-tourism-desktop.jpg");
+  }
+}
+@media (min-width: 1600px) {
+  .subheader--insure-selection {
+    background-position-x: center;
+  }
+}
+.main-selection__select .tokenize {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.main-selection__select .tokenize::before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(0,0,0,0.32);
+}
+.insure-selection__select-block .tokenize {
+  margin-bottom: 0;
+}
+.insure-selection__select-block .tokenize > .tokens-container {
+  padding: 5px 45px 10px;
+  min-height: 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  font-size: 14px;
+  border: 1px solid #e5e5e5;
+}
+@media (min-width: 720px) {
+  .insure-selection__select-block .tokenize > .tokens-container {
+    width: 100%;
+  }
+}
+@media (min-width: 1600px) {
+  .insure-selection__select-block .tokenize > .tokens-container {
+    width: 710px;
+    border-radius: 10px 0 0 10px;
+  }
+}
+.tokenize > .tokens-container {
+  background-image: url("../img/place-24.png");
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  padding: 10px 45px 14px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 0;
+  background-color: #fff;
+  font-size: 14px;
+}
+.tokenize > .tokens-container .placeholder {
+  color: #888;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.tokenize > .tokens-container .token {
+  border: 0;
+  background-color: transparent;
+}
+.tokenize > .tokens-container .dismiss {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  text-decoration: none;
+  border: 0;
+  position: absolute;
+  right: 5px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+.tokenize > .tokens-container .dismiss:before,
+.tokenize > .tokens-container .dismiss:after {
+  position: absolute;
+  top: 0;
+  left: 7px;
+  content: '';
+  height: 10px;
+  width: 1px;
+  background-color: #000;
+  opacity: 0.24;
+}
+.tokenize > .tokens-container .dismiss:before {
+  transform: rotate(45deg);
+}
+.tokenize > .tokens-container .dismiss:after {
+  transform: rotate(-45deg);
+}
+.tokenize > .tokens-container .dismiss:hover:before,
+.tokenize > .tokens-container .dismiss:hover:after {
+  opacity: 1;
+}
+.insure-selection {
+  background-color: #f7f7f7;
+  padding: 0 25px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+}
+.insure-selection::after {
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  z-index: 3;
+  box-shadow: 0px 8px 16px #e7e7e7;
+}
+.insure-selection__wrapper {
+  margin: 0 auto;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: left;
+  align-items: flex-start;
+  position: relative;
+}
+.insure-selection__select-block {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.insure-selection__select-block::before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  right: 24px;
+  bottom: 14px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(0,0,0,0.32);
+}
+.insure-selection__select-block label {
+  display: block;
+  color: #888;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.insure-selection__select-block input {
+  color: #000;
+}
+.insure-selection__select-block input:hover {
+  color: #73429c;
+}
+.insure-selection__select-block input::-webkit-input-placeholder {
+  color: #888;
+}
+.insure-selection__select-block input:-ms-input-placeholder {
+  color: #888;
+}
+.insure-selection__select-block input::-ms-input-placeholder {
+  color: #888;
+}
+.insure-selection__select-block input:-moz-placeholder {
+  opacity: 1;
+  color: #888;
+}
+.insure-selection__select-block input::-moz-placeholder {
+  opacity: 1;
+  color: #888;
+}
+.insure-selection__select-block input::placeholder {
+  opacity: 1;
+  color: #888;
+}
+.insure-selection__select-block--place {
+  margin-bottom: 16px;
+}
+.insure-selection__select-block--place .insure-selection__select-input {
+  padding-left: 45px;
+  padding-right: 45px;
+  background-image: url("../img/place-24.png");
+}
+.insure-selection__select-block--calendar .insure-selection__select-input {
+  padding-left: 45px;
+  padding-right: 45px;
+  background-image: url("../img/calendar-24.png");
+}
+.insure-selection__select-block--person {
+  position: relative;
+}
+.insure-selection__select-block--person .insure-selection__select-input {
+  padding-left: 45px;
+  padding-right: 45px;
+  background-image: url("../img/person-24.png");
+}
+.insure-selection__select-block--activities .insure-selection__select-input {
+  padding-left: 45px;
+  padding-right: 45px;
+  background-image: url("../img/activities-24.png");
+}
+.insure-selection__select-additional {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.insure-selection__select-input {
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  width: 100%;
+  padding: 9px 20px;
+  height: 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  font-size: 14px;
+  border: 1px solid #e5e5e5;
+}
+.insure-selection__person {
+  position: absolute;
+  z-index: 20;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 228px;
+  box-sizing: border-box;
+  left: 0px;
+  margin-top: 9px;
+  background-color: #fff;
+  padding: 11px 16px 16px;
+  border-radius: 10px;
+}
+.insure-selection__person::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -4px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+.insure-selection__person-item {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 93px;
+  box-sizing: border-box;
+  padding: 9px 12px;
+  border: 1px solid rgba(0,0,0,0.32);
+  cursor: pointer;
+}
+.insure-selection__person-item:nth-of-type(n+3) {
+  margin-top: 10px;
+}
+.insure-selection__person-item--default {
+  border-style: dashed;
+}
+.insure-selection__person-item input {
+  width: 55px;
+  border: 0;
+  color: #000;
+  font-size: 14px;
+}
+.insure-selection__person-item button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 0;
+  position: relative;
+}
+.insure-selection__person-item button:before,
+.insure-selection__person-item button:after {
+  position: absolute;
+  top: 0;
+  left: 7px;
+  content: '';
+  height: 10px;
+  width: 1px;
+  background-color: #000;
+  opacity: 0.24;
+}
+.insure-selection__person-item button:before {
+  transform: rotate(45deg);
+}
+.insure-selection__person-item button:after {
+  transform: rotate(-45deg);
+}
+.insure-selection__person-item button:hover:before,
+.insure-selection__person-item button:hover:after {
+  opacity: 1;
+}
+.insure-selection__person-caption {
+  color: #888;
+  font-size: 12px;
+  width: 100%;
+  margin-bottom: 9px;
+}
+.insure-selection__checkbox-block {
+  padding-left: 25px;
+  margin-right: 13px;
+  margin-bottom: 10px;
+}
+.insure-selection__checkbox-block input[type="checkbox"] {
+  display: none;
+}
+.insure-selection__checkbox-block label {
+  font-size: 14px;
+  color: #000;
+  position: relative;
+}
+.insure-selection__checkbox-block input[type="checkbox"]+label::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: -25px;
+  top: 1px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+.insure-selection__checkbox-block input[type="checkbox"]+label:hover::before {
+  border-color: #1abc9c;
+}
+.insure-selection__checkbox-block input[type="checkbox"]:checked+label::before {
+  background-color: #1abc9c;
+  background-image: url("../img/rectangle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.insure-selection__button {
+  min-height: 40px;
+  display: block;
+  width: 142px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  background-color: #1abc9c;
+  border: 0;
+  border-radius: 30px;
+  padding: 12px 10px;
+}
+.insure-selection__button:hover {
+  background-color: #73429c;
+}
+.insure-selection__button-additional {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  font-size: 12px;
+  color: #888;
+  padding: 8px 16px;
+  border: 1px solid #e5e5e5;
+  border-top: 0;
+  border-radius: 0 0 10px 10px;
+  background-color: #f8f8f8;
+}
+.insure-selection__button-additional::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 2;
+  margin-left: 5px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(0,0,0,0.32);
+}
+.insure-selection__button-additional:hover {
+  color: #73429c;
+}
+.insure-selection__button-additional:hover::after {
+  border-top-color: #73429c;
+  border-bottom-color: #73429c;
+}
+.insure-selection__button-additional--opened::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 2;
+  margin-left: 5px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 0;
+  border-bottom: 5px solid rgba(0,0,0,0.32);
+}
+@media (min-width: 720px) {
+  .insure-selection__wrapper {
+    width: 687px;
+    flex-direction: row;
+  }
+  .insure-selection__select-additional {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .insure-selection__select-block--place {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .insure-selection__select-block--place .insure-selection__select-input {
+    border-radius: 10px;
+  }
+  .insure-selection__select-block--calendar {
+    width: 250px;
+  }
+  .insure-selection__select-block--calendar .insure-selection__select-input {
+    border-radius: 10px 0 0 10px;
+  }
+  .insure-selection__select-block--person {
+    width: 159px;
+    margin-left: -1px;
+  }
+  .insure-selection__select-block--person .insure-selection__select-input {
+    border-radius: 0px;
+  }
+  .insure-selection__select-block--activities {
+    width: 280px;
+    margin-left: -1px;
+  }
+  .insure-selection__select-block--activities .insure-selection__select-input {
+    border-radius: 0 10px 10px 0;
+  }
+  .insure-selection__select-block--medicine {
+    width: 180px;
+  }
+  .insure-selection__select-block--medicine .insure-selection__select-input {
+    border-radius: 10px 0 0 10px;
+  }
+  .insure-selection__select-block--luggage {
+    margin-left: -1px;
+    width: 170px;
+  }
+  .insure-selection__select-block--luggage .insure-selection__select-input {
+    border-radius: 0px;
+  }
+  .insure-selection__select-block--civil {
+    margin-left: -1px;
+    width: 190px;
+  }
+  .insure-selection__select-block--civil .insure-selection__select-input {
+    border-radius: 0px;
+  }
+  .insure-selection__select-block--accident {
+    margin-left: -1px;
+    width: 150px;
+  }
+  .insure-selection__select-block--accident .insure-selection__select-input {
+    border-radius: 0 10px 10px 0;
+  }
+  .insure-selection__person {
+    left: -27px;
+  }
+  .insure-selection__button {
+    display: block;
+    width: 162px;
+  }
+}
+@media (min-width: 960px) {
+  .insure-selection__wrapper {
+    width: 912px;
+    align-items: flex-end;
+  }
+  .insure-selection__select-additional {
+    align-items: center;
+    order: 1;
+  }
+  .insure-selection__select-block--calendar {
+    width: 268px;
+  }
+  .insure-selection__select-block--person {
+    width: 179px;
+  }
+  .insure-selection__select-block--activities {
+    width: 306px;
+  }
+  .insure-selection__select-block--activities .insure-selection__select-input {
+    border-radius: 0;
+  }
+  .insure-selection__select-block--medicine {
+    width: 148px;
+  }
+  .insure-selection__select-block--luggage {
+    width: 140px;
+  }
+  .insure-selection__select-block--civil {
+    width: 190px;
+  }
+  .insure-selection__select-block--accident {
+    width: 129px;
+    margin-right: 20px;
+  }
+  .insure-selection__button {
+    width: 160px;
+    margin: 0;
+    margin-bottom: 20px;
+    border-radius: 0 10px 10px 0;
+  }
+  __select-input {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1600px) {
+  .insure-selection {
+    padding: 25px;
+  }
+  .insure-selection__wrapper {
+    width: 1550px;
+  }
+  .insure-selection__select-block--place {
+    width: 710px;
+    margin-bottom: 20px;
+  }
+  .insure-selection__select-block--place .insure-selection__select-input {
+    border-radius: 10px 0 0 10px;
+  }
+  .insure-selection__select-block--calendar {
+    margin-left: -1px;
+    width: 249px;
+  }
+  .insure-selection__select-block--calendar .insure-selection__select-input {
+    border-radius: 0;
+  }
+  .insure-selection__select-block--person {
+    width: 155px;
+  }
+  .insure-selection__select-block--activities {
+    width: 295px;
+  }
+  .insure-selection__select-block--activities .insure-selection__select-input {
+    border-radius: 0;
+  }
+  .insure-selection__select-block--medicine {
+    width: 300px;
+  }
+  .insure-selection__select-block--luggage {
+    width: 300px;
+  }
+  .insure-selection__select-block--civil {
+    width: 300px;
+  }
+  .insure-selection__select-block--accident {
+    width: 300px;
+    margin-right: 20px;
+  }
+  .insure-selection__button {
+    width: 142px;
+  }
+  .insure-selection__button-additional {
+    left: initial;
+    right: 0px;
+    bottom: -25px;
+    transform: translate(0, 100%);
+  }
+}
+.insure-content {
+  background-color: #f7f7f7;
+}
+.insure-content__wrapper {
+  padding: 15px;
+  padding-top: 75px;
+}
+.insure-catalog {
+  width: 290px;
+  margin: 0 auto;
+}
+.insure-catalog__filter {
+  position: relative;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.insure-catalog__filter-selection {
+  font-size: 0;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  border: 0;
+  padding: 10px;
+  background-color: transparent;
+}
+.insure-catalog__filter-selection::before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+  bottom: 0px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(0,0,0,0.32);
+}
+.insure-catalog__filter-name-wrapper {
+  position: relative;
+  border-radius: 10px;
+  background-color: #fff;
+  height: 40px;
+  overflow: hidden;
+}
+.insure-catalog__filter-name {
+  width: 190px;
+  color: #888;
+  display: block;
+  padding: 13px 20px;
+  min-height: 40px;
+  box-sizing: border-box;
+}
+.insure-catalog__filter-name--active {
+  color: #1abc9c;
+}
+.insure-catalog__filter-name:hover {
+  color: #73429c;
+}
+.insure-catalog__filter-name svg {
+  display: none;
+}
+.insure-catalog__filter-view-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.insure-catalog__filter-view {
+  font-size: 0;
+  width: 40px;
+  min-height: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 0;
+  text-decoration: none;
+}
+.insure-catalog__filter-view svg {
+  opacity: 0.24;
+  width: 18px;
+  height: 18px;
+}
+.insure-catalog__filter-view:hover svg {
+  opacity: 1;
+  fill: #73429c;
+}
+.insure-catalog__filter-view--active:hover svg {
+  fill: #1abc9c;
+}
+.insure-catalog__filter-view--active svg {
+  opacity: 1;
+  fill: #1abc9c;
+}
+.insure-catalog__filter-view--block {
+  border-right: 1px solid #f7f7f7;
+}
+.insure-catalog__list {
+  margin: 12px 0 37px;
+  display: flex;
+  flex-direction: column;
+}
+.insure-catalog__item {
+  position: relative;
+}
+.insure-catalog__list .insure-catalog__item--toggle:first-child {
+  margin-top: 10px;
+}
+.insure-catalog__item:first-child {
+  margin-top: 10px;
+}
+.insure-catalog__item:first-child:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  display: block;
+  background-color: #fff;
+  height: 10px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.insure-catalog__item--toggle {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  position: relative;
+}
+.insure-catalog__item--toggle:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  display: block;
+  background-color: #fff;
+  height: 10px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.insure-catalog__item--toggle .insure-catalog__block-shown {
+  padding-top: 25px;
+}
+.insure-catalog__item--toggle + .insure-catalog__item {
+  margin-top: 10px;
+  position: relative;
+}
+.insure-catalog__item--toggle + .insure-catalog__item:before {
+  position: absolute;
+  content: '';
+  top: -10px;
+  left: 0;
+  display: block;
+  background-color: #fff;
+  height: 10px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.insure-catalog__item--toggle--opened {
+  margin: 10px 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.insure-catalog__block-shown {
+  background-color: #fff;
+  padding: 25px 24px 30px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.insure-catalog__company {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.insure-catalog__company img {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+.insure-catalog__title {
+  font-size: 18px;
+  font-weight: 400;
+  width: 175px;
+}
+.insure-catalog__main-info {
+  width: 100%;
+  margin-top: 20px;
+  color: #888;
+  font-size: 12px;
+}
+.insure-catalog__main-info li {
+  margin-bottom: 8px;
+}
+.insure-catalog__risk {
+  width: 70px;
+  font-size: 12px;
+}
+.insure-catalog__badges {
+  width: 120px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.insure-catalog__badges img {
+  width: 24px;
+  height: 24px;
+  margin: 0 3px;
+}
+.insure-catalog__badges-info {
+  position: relative;
+}
+.insure-catalog__badges-info:hover>.insure-catalog__badges-hint {
+  display: block;
+}
+.insure-catalog__badges-hint {
+  display: none;
+  font-size: 14px;
+  min-width: 180px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, -8px);
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 10px 25px;
+  box-shadow: 0px 8px 16px #e7e7e7;
+}
+.insure-catalog__badges-hint::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+.insure-catalog__rating {
+  width: 40px;
+  text-align: right;
+  font-size: 12px;
+}
+.insure-catalog__rating::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 11px;
+  height: 11px;
+  position: relative;
+  left: -4px;
+  bottom: 2px;
+  background-image: url("../img/star.gif");
+  background-repeat: no-repeat;
+}
+.insure-catalog__price {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1abc9c;
+  text-transform: uppercase;
+}
+.insure-catalog__price--base {
+  margin-top: 25px;
+  width: 100%;
+}
+.insure-catalog__price--base:hover {
+  color: #73429c;
+}
+.insure-catalog__price--total {
+  font-size: 24px;
+  margin-right: 15px;
+  display: block;
+}
+.insure-catalog__button-additional {
+  position: absolute;
+  font-size: 0;
+  right: 25px;
+  top: 28px;
+  padding: 10px;
+  background-color: transparent;
+  border: 0;
+}
+.insure-catalog__button-additional::before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(0,0,0,0.32);
+}
+.insure-catalog__block-hidden {
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.insure-catalog__assistance-links {
+  padding: 25px 0 15px;
+}
+.insure-catalog__assistance {
+  margin-bottom: 15px;
+  color: #888;
+}
+.insure-catalog__assistance-type {
+  margin-right: 5px;
+}
+.insure-catalog__assistance-name {
+  color: #000;
+}
+.insure-catalog__assistance-hint-block {
+  display: inline-block;
+  position: relative;
+}
+.insure-catalog__assistance-hint-block:hover>.insure-catalog__assistance-hint {
+  display: block;
+}
+.insure-catalog__assistance-hint-button {
+  font-size: 11px;
+  border-radius: 50%;
+  color: #888;
+  border: 1px solid;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  text-align: center;
+  line-height: 12px;
+  margin-left: 2px;
+}
+.insure-catalog__assistance-hint {
+  display: none;
+  font-size: 14px;
+  min-width: 180px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, -8px);
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 10px 25px;
+  box-shadow: 0px 8px 16px #e7e7e7;
+}
+.insure-catalog__assistance-hint::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+.insure-catalog__links a {
+  display: block;
+  margin-bottom: 15px;
+  text-decoration: underline;
+  text-decoration-color: #eee;
+}
+.insure-catalog__links a:hover {
+  color: #73429c;
+  text-decoration-color: #1abc9c;
+}
+.insure-catalog__services {
+  border-top: 1px solid #eee;
+  padding: 28px 0;
+}
+.insure-catalog__services-title {
+  color: #888;
+  margin-bottom: 10px;
+}
+.insure-catalog__services-list li {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+.insure-catalog__services-list li::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #000;
+  left: -15px;
+  top: 0.4em;
+  display: block;
+}
+.insure-catalog__services-list--full li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  display: block;
+  top: 10px;
+  left: 0;
+  background-image: repeating-linear-gradient(90deg, #eee, #eee 1px, #fff 1px, #fff 2px);
+}
+.insure-catalog__services-list--full span {
+  max-width: 163px;
+  background-color: #fff;
+  position: relative;
+  z-index: 3;
+}
+.insure-catalog__services-list--full span:last-child {
+  margin: 0 auto;
+  margin-right: 0px;
+}
+.insure-catalog__form {
+  border-top: 1px solid #eee;
+  padding-top: 28px;
+  font-size: 14px;
+}
+.insure-catalog__form-title {
+  margin-bottom: 22px;
+}
+.insure-catalog__fieldset-luggage {
+  margin-bottom: 15px;
+}
+.insure-catalog__fieldset-accident {
+  margin-bottom: 15px;
+}
+.insure-catalog__fieldset-responsibility {
+  margin-bottom: 15px;
+}
+.insure-catalog__legend {
+  width: 100%;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 15px;
+}
+.insure-catalog__radio-block {
+  color: #888;
+  margin-bottom: 12px;
+  padding-left: 27px;
+}
+.insure-catalog__radio-block input[type="radio"] {
+  display: none;
+}
+.insure-catalog__radio-block label {
+  position: relative;
+}
+.insure-catalog__radio-block input[type="radio"]+label::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: -27px;
+  top: 1px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.insure-catalog__radio-block input[type="radio"]+label:hover::before {
+  border-color: #1abc9c;
+}
+.insure-catalog__radio-block input[type="radio"]:checked+label {
+  color: #000;
+}
+.insure-catalog__radio-block input[type="radio"]:checked+label::before {
+  border: 5px solid #1abc9c;
+}
+.insure-catalog__value {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.insure-catalog__value .insure-catalog__legend {
+  margin-bottom: 0px;
+}
+.insure-catalog__button-buy {
+  width: 122px;
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  background-color: #1abc9c;
+  border: 0;
+  border-radius: 30px;
+  padding: 12px 10px;
+}
+.insure-catalog__button-buy:hover {
+  background-color: #73429c;
+}
+.insure-catalog__button-more {
+  width: 160px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 14px 18px;
+  border: 1px dashed #888;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  color: #888;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.insure-catalog__button-more:hover {
+  color: #73429c;
+  border-color: #73429c;
+}
+.insure-catalog__banner {
+  width: 100%;
+  box-sizing: border-box;
+  order: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.insure-catalog__banner-title {
+  font-size: 18px;
+  line-height: 20px;
+  width: 110px;
+}
+.insure-catalog__banner img {
+  width: 104px;
+  height: auto;
+}
+.insure-catalog__banner p {
+  width: 100%;
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 22px;
+}
+@media (min-width: 720px) {
+  .insure-catalog {
+    width: 688px;
+    margin: 0 auto;
+  }
+  .insure-catalog__filter {
+    justify-content: flex-start;
+  }
+  .insure-catalog__filter-name-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .insure-catalog__filter-selection {
+    display: none;
+  }
+  .insure-catalog__block-shown {
+    position: relative;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .insure-catalog__filter-name {
+    width: 202px;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    border-right: 1px solid #f7f7f7;
+  }
+  .insure-catalog__filter-name svg {
+    display: inline-block;
+    fill: #888;
+  }
+  .insure-catalog__filter-name:hover svg {
+    fill: #73429c;
+  }
+  .insure-catalog__filter-name--active svg {
+    fill: #1abc9c;
+  }
+  .insure-catalog__filter-name--active:hover {
+    color: #1abc9c;
+  }
+  .insure-catalog__filter-name--active:hover svg {
+    fill: #1abc9c;
+  }
+  .insure-catalog__filter-name-wrapper {
+    border-radius: 10px 0 0 10px;
+  }
+  .insure-catalog__filter-view-wrapper {
+    border-radius: 0 10px 10px 0;
+  }
+  .insure-catalog__company {
+    position: relative;
+    width: 300px;
+    box-sizing: border-box;
+    padding-left: 57px;
+    margin-bottom: 0;
+  }
+  .insure-catalog__company img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .insure-catalog__title {
+    margin-bottom: 5px;
+  }
+  .insure-catalog__main-info {
+    margin-top: 0;
+  }
+  .insure-catalog__risk {
+    width: 70px;
+  }
+  .insure-catalog__rating {
+    position: absolute;
+    left: 324px;
+    top: 45px;
+    text-align: left;
+  }
+  .insure-catalog__price--base {
+    width: 140px;
+    margin-top: 0;
+  }
+  .insure-catalog__button-additional::before {
+    top: 0;
+  }
+  .insure-catalog__assistance-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .insure-catalog__assistance {
+    width: 300px;
+  }
+  .insure-catalog__links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .insure-catalog__links a {
+    margin-left: 20px;
+  }
+  .insure-catalog__services-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .insure-catalog__services-list li {
+    width: 280px;
+  }
+  .insure-catalog__form-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .insure-catalog__fieldset-luggage {
+    width: 200px;
+    margin-right: 42px;
+  }
+  .insure-catalog__fieldset-wrapper {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  .insure-catalog__value {
+    width: 137px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .insure-catalog__price--total {
+    margin: 10px 0 15px;
+  }
+  .insure-catalog__banner {
+    order: 0;
+    position: relative;
+    padding-left: 165px;
+    flex-direction: column;
+    margin: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #eee;
+  }
+  .insure-catalog__banner-title {
+    width: 100%;
+  }
+  .insure-catalog__banner img {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+  }
+  .insure-catalog__banner p {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 960px) {
+  .insure-catalog {
+    width: 914px;
+  }
+  .insure-catalog__filter-name {
+    width: 236px;
+    font-size: 14px;
+  }
+  .insure-catalog__filter-view {
+    width: 100px;
+  }
+  .insure-catalog__filter-view svg {
+    display: block;
+    margin: 0 auto;
+  }
+  .insure-catalog__block-shown {
+    justify-content: flex-start;
+  }
+  .insure-catalog__company {
+    width: 350px;
+  }
+  .insure-catalog__risk {
+    width: 100px;
+    text-align: center;
+  }
+  .insure-catalog__rating {
+    position: static;
+    width: 84px;
+    text-align: center;
+  }
+  .insure-catalog__badges {
+    width: 128px;
+  }
+  .insure-catalog__button-additional {
+    max-width: 200px;
+    padding-right: 20px;
+    font-size: 16px;
+    top: 48px;
+    text-decoration: underline;
+    text-decoration-color: #eee;
+  }
+  .insure-catalog__button-additional::before {
+    top: 0;
+    margin: auto 0;
+  }
+  .insure-catalog__button-additional:hover {
+    color: #73429c;
+    text-decoration-color: #73429c;
+  }
+  .insure-catalog__block-hidden {
+    padding-left: 0;
+    padding-right: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .insure-catalog__assistance-links {
+    margin-left: 80px;
+    width: 170px;
+    margin-right: 43px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .insure-catalog__assistance {
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  .insure-catalog__assistance-type {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .insure-catalog__links {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .insure-catalog__links a {
+    margin-left: 0;
+  }
+  .insure-catalog__services {
+    border-top: 0;
+    width: 584px;
+  }
+  .insure-catalog__services-list li {
+    width: 270px;
+  }
+  .insure-catalog__form {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 43px;
+    box-sizing: border-box;
+  }
+  .insure-catalog__fieldset-wrapper {
+    width: 410px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .insure-catalog__fieldset-accident {
+    width: 180px;
+  }
+  .insure-catalog__fieldset-responsibility {
+    width: 200px;
+  }
+  .insure-catalog__price--base {
+    margin: 0 auto;
+    margin-right: 0;
+  }
+  .insure-catalog__banner {
+    border-radius: 0px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #eee;
+  }
+}
+@media (min-width: 1600px) {
+  .insure-content__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  .insure-catalog {
+    width: 1236px;
+    margin: 0;
+  }
+  .insure-catalog__filter-name {
+    width: 345px;
+  }
+  .insure-catalog__list {
+    width: 1236px;
+  }
+  .insure-catalog__company {
+    margin-right: 50px;
+  }
+  .insure-catalog__assistance-links {
+    margin-right: 171px;
+  }
+  .insure-catalog__fieldset-wrapper {
+    width: 500px;
+  }
+  .insure-catalog__banner {
+    align-items: flex-start;
+  }
+  .insure-catalog__banner-title {
+    width: 584px;
+  }
+  .insure-catalog__banner p {
+    width: 584px;
+  }
+}
+.insure-catalog__block-shown .insure-catalog__services-list,
+.insure-catalog__block-shown .insure-catalog__risk-link {
+  display: none;
+}
+.insure-catalog__block-shown--small .insure-catalog__services-list,
+.insure-catalog__block-shown--small .insure-catalog__risk-link {
+  display: block;
+}
+.insure-catalog__list--small {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.insure-catalog__list--small .insure-catalog__banner {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.insure-catalog__list--small .insure-catalog__item {
+  width: 290px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.insure-catalog__list--small .insure-catalog__item:before {
+  display: none;
+}
+@media (min-width: 720px) {
+  .insure-catalog__list--small .insure-catalog__item {
+    width: 335px;
+  }
+}
+@media (min-width: 960px) {
+  .insure-catalog__list--small .insure-catalog__item {
+    width: 290px;
+  }
+}
+@media (min-width: 1600px) {
+  .insure-catalog__list--small .insure-catalog__item {
+    width: 335px;
+  }
+}
+.insure-catalog__block-shown--small {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+}
+.insure-catalog__block-shown--small .insure-catalog__company {
+  flex-direction: column;
+  margin: 0;
+  padding: 20px 30px 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.insure-catalog__block-shown--small .insure-catalog__company img {
+  position: static;
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+.insure-catalog__block-shown--small .insure-catalog__title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.insure-catalog__block-shown--small .insure-catalog__main-info {
+  font-size: 12px;
+  text-align: center;
+}
+.insure-catalog__block-shown--small .insure-catalog__main-info li:nth-child(n+2) {
+  display: none;
+}
+@media (min-width: 960px) {
+  .insure-catalog__block-shown--small .insure-catalog__main-info {
+    text-align: left;
+  }
+  .insure-catalog__block-shown--small .insure-catalog__main-info li:nth-child(n+2) {
+    display: block;
+  }
+}
+.insure-catalog__block-shown--small .insure-catalog__rating {
+  position: absolute;
+  left: auto;
+  right: 15px;
+  top: 15px;
+  z-index: 5;
+  width: 40px;
+}
+.insure-catalog__block-shown--small .insure-catalog__badges {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  width: auto;
+  max-width: 90px;
+}
+.insure-catalog__block-shown--small .insure-catalog__risk {
+  display: none;
+}
+.insure-catalog__block-shown--small .insure-catalog__risk-link {
+  margin: 0 30px 0 45px;
+  font-size: 12px;
+  color: #888;
+  border-bottom: 1px dashed #888;
+  width: auto;
+  display: inline-block;
+}
+.insure-catalog__block-shown--small .insure-catalog__risk-link:hover {
+  color: #73429c;
+  border-color: #73429c;
+}
+.insure-catalog__block-shown--small .insure-catalog__price--base {
+  margin-left: 0;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border-top: 1px solid #eee;
+  margin-top: 30px;
+  display: block;
+}
+.insure-catalog__block-shown--small .insure-catalog__button-additional {
+  display: none;
+}
+.insure-catalog__block-shown--small .insure-catalog__services-list {
+  padding: 0 30px;
+  font-size: 12px;
+}
+.insure-catalog__block-shown--small .insure-catalog__services-list li {
+  width: 100%;
+}
+.benefits-statistics {
+  width: 290px;
+  margin: 0 auto;
+}
+.benefits-statistics__benefits {
+  width: 290px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.benefits-statistics__benefits li {
+  align-items: center;
+}
+.benefits-statistics__statistics {
+  padding-top: 27px;
+  width: 290px;
+}
+.benefits-statistics__statistics li {
+  align-items: baseline;
+}
+.benefits-statistics__title {
+  width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 27px;
+  color: #000;
+}
+.benefits-statistics p {
+  width: 230px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #888;
+}
+.benefits-statistics__numbers {
+  font-size: 24px;
+  color: #888;
+  max-width: 50px;
+}
+.benefits-statistics_image {
+  max-width: 50px;
+}
+.benefits-statistics_image img {
+  max-width: 40px;
+  height: auto;
+}
+.benefits-statistics li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+@media (min-width: 720px) {
+  .benefits-statistics {
+    width: 688px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .benefits-statistics__benefits {
+    border: none;
+  }
+  .benefits-statistics__statistics {
+    padding-top: 0;
+  }
+}
+@media (min-width: 960px) {
+  .benefits-statistics {
+    width: 914px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+  }
+  .benefits-statistics__benefits {
+    width: 100%;
+    border-bottom: 1px solid #e4e4e4;
+  }
+  .benefits-statistics__list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .benefits-statistics__statistics {
+    width: 100%;
+    padding-top: 27px;
+  }
+  .benefits-statistics li {
+    width: 160px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .benefits-statistics p {
+    width: 160px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1600px) {
+  .benefits-statistics {
+    width: 220px;
+    text-align: left;
+  }
+  .benefits-statistics__list {
+    flex-direction: column;
+  }
+  .benefits-statistics li {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .benefits-statistics p {
+    width: 150px;
+    margin-top: 0;
+  }
+}
+.content-hidden {
+  display: none;
+}
+.content-show {
+  display: flex;
+}
+
+/*# sourceMappingURL=main.css.map */
